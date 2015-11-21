@@ -127,11 +127,6 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        // pi_sweet4u_homepage
-        if (0 === strpos($pathinfo, '/hello') && preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'pi_sweet4u_homepage')), array (  '_controller' => 'PI\\Sweet4uBundle\\Controller\\DefaultController::indexAction',));
-        }
-
         // pi_sweet4u_Accueil
         if (rtrim($pathinfo, '/') === '') {
             if (substr($pathinfo, -1) !== '/') {
@@ -139,6 +134,16 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             }
 
             return array (  '_controller' => 'PI\\Sweet4uBundle\\Controller\\Sweet4uController::indexAction',  '_route' => 'pi_sweet4u_Accueil',);
+        }
+
+        // pi_sweet4u_Compte
+        if ($pathinfo === '/mon-compte') {
+            return array (  '_controller' => 'PI\\Sweet4uBundle\\Controller\\Sweet4uController::profilAction',  '_route' => 'pi_sweet4u_Compte',);
+        }
+
+        // pi_sweet4u_ListePatisserie
+        if ($pathinfo === '/liste-patisserie') {
+            return array (  '_controller' => 'PI\\Sweet4uBundle\\Controller\\Sweet4uController::listePatisserieAction',  '_route' => 'pi_sweet4u_ListePatisserie',);
         }
 
         // homepage

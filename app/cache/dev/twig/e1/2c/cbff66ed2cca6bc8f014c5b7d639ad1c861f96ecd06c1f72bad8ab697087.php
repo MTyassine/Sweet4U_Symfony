@@ -19,6 +19,7 @@ class __TwigTemplate_e12ccbff66ed2cca6bc8f014c5b7d639ad1c861f96ecd06c1f72bad8ab6
 
         $this->blocks = array(
             'body' => array($this, 'block_body'),
+            'topArticle' => array($this, 'block_topArticle'),
             'topPromo' => array($this, 'block_topPromo'),
             'service' => array($this, 'block_service'),
             'avieClient' => array($this, 'block_avieClient'),
@@ -42,26 +43,121 @@ class __TwigTemplate_e12ccbff66ed2cca6bc8f014c5b7d639ad1c861f96ecd06c1f72bad8ab6
         echo "    
     ";
         // line 5
+        $this->displayBlock('topArticle', $context, $blocks);
+        // line 89
+        echo "    
+    
+    ";
+        // line 91
         $this->displayBlock('topPromo', $context, $blocks);
-        // line 86
+        // line 172
         echo "    
     ";
-        // line 87
+        // line 173
         $this->displayBlock('service', $context, $blocks);
-        // line 119
+        // line 205
         echo "    
     ";
-        // line 120
+        // line 206
         $this->displayBlock('avieClient', $context, $blocks);
-        // line 184
+        // line 270
         echo "    
 ";
     }
 
     // line 5
-    public function block_topPromo($context, array $blocks = array())
+    public function block_topArticle($context, array $blocks = array())
     {
         // line 6
+        echo "    
+    <section class=\"home-services scale-text\">
+      <div class=\"container\">
+        <div class=\"section-title\">
+          <h1>Goodies That <b>We Do</b></h1>
+          <div class=\"description\">Proin mattis rutrum magna, et pretium erat tincidunt at. Donec lectus ipsum, pulvinar id sollicitudin id, bibendum vel quam. Suspendisse nec ante non lacusvel sed sem</div>
+        </div>
+      </div>
+      <div class=\"container container1200\">
+          <div class=\"swiper-container\">
+            <div class=\"swiper-wrapper\">
+              <div class=\"swiper-slide\">
+                <a href=\"#\">
+                  <img src=\"temp/products_item_1.jpg\" alt=\"\">
+                </a>
+                <h4 class=\"name\"><a href=\"#\">Aliquam dolor tortor</a></h4>
+                <div class=\"description\">Suspendisse potenti. Etiam non euismod augue. Nam aliquam sit amet tortor sit amet consectetur.</div>
+              </div>
+              <div class=\"swiper-slide\">
+                <a href=\"#\">
+                  <img src=\"temp/products_item_2.jpg\" alt=\"\">
+                </a>
+                <h4 class=\"name\"><a href=\"#\">Pellentesque a metus</a></h4>
+                <div class=\"description\">Aenean egestas placerat nisi. Fusce sed libero tempus, ullamcorper nunc elit risus, convallis vitae tellus</div>
+              </div>
+              <div class=\"swiper-slide\">
+                <a href=\"#\">
+                  <img src=\"temp/products_item_3.jpg\" alt=\"\">
+                </a>
+                <h4 class=\"name\"><a href=\"#\">Aenean elementum</a></h4>
+                <div class=\"description\">Aenean egestas placerat nisi. Fusce sed libero tempus, ullamcorper nunc elit risus, convallis vitae tellus</div>
+              </div>
+              <div class=\"swiper-slide mr0\">
+                <a href=\"#\">
+                  <img src=\"temp/products_item_4.jpg\" alt=\"\">
+                </a>
+                <h4 class=\"name\"><a href=\"#\">Maecenas lacinia</a></h4>
+                <div class=\"description\">Aenean egestas placerat nisi. Fusce sed libero tempus, ullamcorper nunc elit risus, convallis vitae tellus</div>
+              </div>
+              <div class=\"swiper-slide\">
+                <a href=\"#\">
+                  <img src=\"temp/products_item_5.jpg\" alt=\"\">
+                </a>
+                <h4 class=\"name\"><a href=\"#\">Aliquam dolor tortor</a></h4>
+                <div class=\"description\">Suspendisse potenti. Etiam non euismod augue. Nam aliquam sit amet tortor sit amet consectetur.</div>
+              </div>
+              <div class=\"swiper-slide\">
+                <a href=\"#\">
+                  <img src=\"temp/products_item_6.jpg\" alt=\"\">
+                </a>
+                <h4 class=\"name\"><a href=\"#\">Pellentesque a metus</a></h4>
+                <div class=\"description\">Aenean egestas placerat nisi. Fusce sed libero tempus, ullamcorper nunc elit risus, convallis vitae tellus</div>
+              </div>
+              <div class=\"swiper-slide\">
+                <a href=\"#\">
+                  <img src=\"temp/products_item_7.jpg\" alt=\"\">
+                </a>
+                <h4 class=\"name\"><a href=\"#\">Aenean elementum</a></h4>
+                <div class=\"description\">Aenean egestas placerat nisi. Fusce sed libero tempus, ullamcorper nunc elit risus, convallis vitae tellus</div>
+              </div>
+              <div class=\"swiper-slide mr0\">
+                <a href=\"#\">
+                  <img src=\"temp/products_item_8.jpg\" alt=\"\">
+                </a>
+                <h4 class=\"name\"><a href=\"#\">Maecenas lacinia</a></h4>
+                <div class=\"description\">Aenean egestas placerat nisi. Fusce sed libero tempus, ullamcorper nunc elit risus, convallis vitae tellus</div>
+              </div>
+            </div>
+            <ul class=\"flex-direction-nav\">
+              <li>
+                <a class=\"flex-prev\" href=\"#\"></a>
+              </li>
+              <li>
+                <a class=\"flex-next\" href=\"#\"></a>
+              </li>
+            </ul>
+          </div>
+
+        <a href=\"products.html\" class=\"btn brown\">view aur products</a>
+      </div>
+    </section>
+        
+    ";
+    }
+
+    // line 91
+    public function block_topPromo($context, array $blocks = array())
+    {
+        // line 92
         echo "
     <section class=\"home-products scale-text\">
       <div class=\"swiper-container\">
@@ -144,10 +240,10 @@ class __TwigTemplate_e12ccbff66ed2cca6bc8f014c5b7d639ad1c861f96ecd06c1f72bad8ab6
     ";
     }
 
-    // line 87
+    // line 173
     public function block_service($context, array $blocks = array())
     {
-        // line 88
+        // line 174
         echo "
     <section class=\"home-our-services scale-text\">
       <div class=\"container\">
@@ -181,7 +277,7 @@ class __TwigTemplate_e12ccbff66ed2cca6bc8f014c5b7d639ad1c861f96ecd06c1f72bad8ab6
     ";
     }
 
-    // line 120
+    // line 206
     public function block_avieClient($context, array $blocks = array())
     {
         echo "        
@@ -262,6 +358,6 @@ class __TwigTemplate_e12ccbff66ed2cca6bc8f014c5b7d639ad1c861f96ecd06c1f72bad8ab6
 
     public function getDebugInfo()
     {
-        return array (  185 => 120,  151 => 88,  148 => 87,  65 => 6,  62 => 5,  57 => 184,  55 => 120,  52 => 119,  50 => 87,  47 => 86,  45 => 5,  42 => 4,  39 => 3,  11 => 1,);
+        return array (  281 => 206,  247 => 174,  244 => 173,  161 => 92,  158 => 91,  72 => 6,  69 => 5,  64 => 270,  62 => 206,  59 => 205,  57 => 173,  54 => 172,  52 => 91,  48 => 89,  46 => 5,  43 => 4,  40 => 3,  11 => 1,);
     }
 }

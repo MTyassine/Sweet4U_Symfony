@@ -1,7 +1,56 @@
-pi_sweet4u_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: PISweet4uBundle:Default:index }
-
 pi_sweet4u_Accueil:
     path:     /
     defaults: { _controller: PISweet4uBundle:Sweet4u:index }
+    
+pi_sweet4u_Compte:
+    path:     /mon-compte
+    defaults: { _controller: PISweet4uBundle:Sweet4u:profil }
+    
+pi_sweet4u_apropos:
+    path:     /apropos
+    defaults: { _controller: PISweet4uBundle:Sweet4u:apropos }
+    
+pi_sweet4u_service:
+    path:     /service
+    defaults: { _controller: PISweet4uBundle:Sweet4u:service }
+    
+pi_sweet4u_contact:
+    path:     /contact
+    defaults: { _controller: PISweet4uBundle:Sweet4u:contact }
+    
+pi_sweet4u_ListePatisserie:
+    path:     /liste-patisserie
+    defaults: { _controller: PISweet4uBundle:Client:listePatisserie }
+    
+pi_sweet4u_ListeCatalogue:
+    path:     /patisserie/liste-catalogue
+    defaults: { _controller: PISweet4uBundle:Client:listeCatalogue }
+    
+pi_sweet4u_ListeArticle:
+    path:     /patisserie/catalogue/liste-article
+    defaults: { _controller: PISweet4uBundle:Client:listeArticle }
+    
+pi_sweet4u_Article:
+    path:     /patisserie/catalogue/article
+    defaults: { _controller: PISweet4uBundle:Client:article }
+    
+pi_sweet4u_Panier:
+    path:     /panier
+    defaults: { _controller: PISweet4uBundle:Client:panier }
+    
+pi_sweet4u_ClientCommandes:
+    path:     /commandes
+    defaults: { _controller: PISweet4uBundle:Client:commandes }
+    
+pi_sweet4u_Payement:
+    path:     /commande/payement
+    defaults: { _controller: PISweet4uBundle:Client:payement }
+    
+pi_sweet4u_GestionCommentaire:
+    path:     /gestion-commentaire
+    defaults: { _controller: PISweet4uBundle:Admin:GestionCommentaire }
+    
+pi_sweet4u_BloquerCompte:
+    path:     /gestion-commentaire
+    defaults: { _controller: PISweet4uBundle:Admin:Block }
+    

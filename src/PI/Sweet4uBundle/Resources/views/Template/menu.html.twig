@@ -1,25 +1,31 @@
 
 <nav class="main-nav">
         <ul class="left">
-          <li><a class="active" href="index-2.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="products.html">Products</a></li>
+          <li><a class="active" href="{{ path('pi_sweet4u_Accueil') }}">Accueil</a></li>
+          <li><a href="{{ path('pi_sweet4u_apropos') }}">à propos</a></li>
+          <li><a href="{{ path('pi_sweet4u_ListePatisserie') }}">Patisserie</a></li>
         </ul>
+    
+    <!-- ------------ logo ------------------- -->
+      
         <div class="wrap-logo">
-          <a href="index-2.html" class="logo" title="Invisio">
+          <a href="{{ path('pi_sweet4u_Accueil') }}" class="logo" title="Sweet4U">
             <span class="icon"></span>
             <h1>Sweet4U</h1>
             <strong>cakes</strong>
           </a>
         </div>
+    
+    <!-- ------------------------------------- -->
+    
         <ul class="right">
-          <li><a href="services.html">Services</a></li>
-          <li class="menu-item-has-children close"><a href="#">Blog</a>
+          <li><a href="{{ path('pi_sweet4u_service') }}">Services</a></li>
+          <li class="menu-item-has-children close"><a href="#">Compte</a>
           	<ul class="submenu">
-            	<li><a href="blog.html">Blog style 1</a></li>
-                <li><a href="blog_archive.html">Blog style 2</a></li>
+            	<li><a href="{{ path('pi_sweet4u_Compte') }}">Parametre</a></li>
+                <li><a href="{{ path('pi_sweet4u_commande') }}">Commande</a></li>
             </ul>
           </li>
-          <li><a href="contact_us.html">Contact Us</a></li>
+          <li><a href="{{ path('pi_sweet4u_contact') }}">Contact</a></li>
         </ul>
       </nav>

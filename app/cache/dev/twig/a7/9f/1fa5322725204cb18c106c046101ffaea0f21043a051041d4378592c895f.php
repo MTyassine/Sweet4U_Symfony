@@ -15,7 +15,6 @@ class __TwigTemplate_a79f1fa5322725204cb18c106c046101ffaea0f21043a051041d4378592
             'menu' => array($this, 'block_menu'),
             'recherche' => array($this, 'block_recherche'),
             'slide' => array($this, 'block_slide'),
-            'topArticle' => array($this, 'block_topArticle'),
             'body' => array($this, 'block_body'),
             'footer' => array($this, 'block_footer'),
         );
@@ -84,27 +83,24 @@ class __TwigTemplate_a79f1fa5322725204cb18c106c046101ffaea0f21043a051041d4378592
     ";
         // line 84
         $this->displayBlock('slide', $context, $blocks);
-        // line 139
+        // line 86
         echo "    
-  
+    
+    
+    
     ";
-        // line 141
-        $this->displayBlock('topArticle', $context, $blocks);
-        // line 225
-        echo "    
-    ";
-        // line 226
+        // line 90
         $this->displayBlock('body', $context, $blocks);
-        // line 229
+        // line 93
         echo "    
         
 </div>
 
 <!-- FOOTER -->
 ";
-        // line 234
+        // line 98
         $this->displayBlock('footer', $context, $blocks);
-        // line 252
+        // line 116
         echo "
 <script src=\"https://maps.googleapis.com/maps/api/js\"></script>
 <script src=\"//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js\"></script>
@@ -185,164 +181,22 @@ class __TwigTemplate_a79f1fa5322725204cb18c106c046101ffaea0f21043a051041d4378592
     public function block_slide($context, array $blocks = array())
     {
         // line 85
-        echo "    
-    <div class=\"home-slider full-height full-min-height\">
-      <div class=\"fixed-baner\">
-        <div class=\"swiper-container\">
-          <div class=\"swiper-wrapper\">
-            <div class=\"swiper-slide\">
-              <div class=\"bg bg-bg\" style=\"background-image: url(temp/home_banner_1.jpg);\"></div>
-              <div class=\"container\">
-                <div class=\"top_bottom\">
-                  <div class=\"table\">
-                    <div class=\"t_td\">
-                      <div class=\"description animation-rotate hidden-320\">Curabitur ultricies arcu non nibh</div>
-                      <h2 class=\"animation-scale\">We Make With Love</h2>
-                      <a href=\"product_detail.html\" class=\"btn red animation-btn\">learn more about us</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class=\"swiper-slide\">
-              <div class=\"bg bg-bg\" style=\"background-image: url(temp/home_banner_2.jpg);\"></div>
-              <div class=\"container\">
-                <div class=\"top_bottom\">
-                  <div class=\"table\">
-                    <div class=\"t_td\">
-                      <div class=\"description animation-rotate hidden-320\">Pellentesque ullamcorper tincidunt</div>
-                      <h2 class=\"animation-scale\">All For Your Enjoyment</h2>
-                      <a href=\"product_detail.html\" class=\"btn red animation-btn\">view our services</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class=\"swiper-slide\">
-              <div class=\"bg bg-bg\" style=\"background-image: url(temp/home_banner_3.jpg);\"></div>
-              <div class=\"container\">
-                <div class=\"top_bottom\">
-                  <div class=\"table\">
-                    <div class=\"t_td\">
-                      <div class=\"description animation-rotate hidden-320\">Suspendisse nec ante non lacus </div>
-                      <h2 class=\"animation-scale\">Taste Our Amazing Cakes</h2>
-                      <a href=\"product_detail.html\" class=\"btn red animation-btn\">view aur delicious products</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class=\"pagination\" data-0=\"margin-bottom:0px;\" data-400=\"margin-bottom:100px;\"></div>
-          <!--<div class=\"wheel-wrap\" data-0=\"margin-bottom:0px;\" data-400=\"margin-bottom:100px;\"><div class=\"wheel\"></div></div>-->
-        </div>
-      </div>
-    </div>
-        
-    ";
-    }
-
-    // line 141
-    public function block_topArticle($context, array $blocks = array())
-    {
-        // line 142
-        echo "    
-    <section class=\"home-services scale-text\">
-      <div class=\"container\">
-        <div class=\"section-title\">
-          <h1>Goodies That <b>We Do</b></h1>
-          <div class=\"description\">Proin mattis rutrum magna, et pretium erat tincidunt at. Donec lectus ipsum, pulvinar id sollicitudin id, bibendum vel quam. Suspendisse nec ante non lacusvel sed sem</div>
-        </div>
-      </div>
-      <div class=\"container container1200\">
-          <div class=\"swiper-container\">
-            <div class=\"swiper-wrapper\">
-              <div class=\"swiper-slide\">
-                <a href=\"#\">
-                  <img src=\"temp/products_item_1.jpg\" alt=\"\">
-                </a>
-                <h4 class=\"name\"><a href=\"#\">Aliquam dolor tortor</a></h4>
-                <div class=\"description\">Suspendisse potenti. Etiam non euismod augue. Nam aliquam sit amet tortor sit amet consectetur.</div>
-              </div>
-              <div class=\"swiper-slide\">
-                <a href=\"#\">
-                  <img src=\"temp/products_item_2.jpg\" alt=\"\">
-                </a>
-                <h4 class=\"name\"><a href=\"#\">Pellentesque a metus</a></h4>
-                <div class=\"description\">Aenean egestas placerat nisi. Fusce sed libero tempus, ullamcorper nunc elit risus, convallis vitae tellus</div>
-              </div>
-              <div class=\"swiper-slide\">
-                <a href=\"#\">
-                  <img src=\"temp/products_item_3.jpg\" alt=\"\">
-                </a>
-                <h4 class=\"name\"><a href=\"#\">Aenean elementum</a></h4>
-                <div class=\"description\">Aenean egestas placerat nisi. Fusce sed libero tempus, ullamcorper nunc elit risus, convallis vitae tellus</div>
-              </div>
-              <div class=\"swiper-slide mr0\">
-                <a href=\"#\">
-                  <img src=\"temp/products_item_4.jpg\" alt=\"\">
-                </a>
-                <h4 class=\"name\"><a href=\"#\">Maecenas lacinia</a></h4>
-                <div class=\"description\">Aenean egestas placerat nisi. Fusce sed libero tempus, ullamcorper nunc elit risus, convallis vitae tellus</div>
-              </div>
-              <div class=\"swiper-slide\">
-                <a href=\"#\">
-                  <img src=\"temp/products_item_5.jpg\" alt=\"\">
-                </a>
-                <h4 class=\"name\"><a href=\"#\">Aliquam dolor tortor</a></h4>
-                <div class=\"description\">Suspendisse potenti. Etiam non euismod augue. Nam aliquam sit amet tortor sit amet consectetur.</div>
-              </div>
-              <div class=\"swiper-slide\">
-                <a href=\"#\">
-                  <img src=\"temp/products_item_6.jpg\" alt=\"\">
-                </a>
-                <h4 class=\"name\"><a href=\"#\">Pellentesque a metus</a></h4>
-                <div class=\"description\">Aenean egestas placerat nisi. Fusce sed libero tempus, ullamcorper nunc elit risus, convallis vitae tellus</div>
-              </div>
-              <div class=\"swiper-slide\">
-                <a href=\"#\">
-                  <img src=\"temp/products_item_7.jpg\" alt=\"\">
-                </a>
-                <h4 class=\"name\"><a href=\"#\">Aenean elementum</a></h4>
-                <div class=\"description\">Aenean egestas placerat nisi. Fusce sed libero tempus, ullamcorper nunc elit risus, convallis vitae tellus</div>
-              </div>
-              <div class=\"swiper-slide mr0\">
-                <a href=\"#\">
-                  <img src=\"temp/products_item_8.jpg\" alt=\"\">
-                </a>
-                <h4 class=\"name\"><a href=\"#\">Maecenas lacinia</a></h4>
-                <div class=\"description\">Aenean egestas placerat nisi. Fusce sed libero tempus, ullamcorper nunc elit risus, convallis vitae tellus</div>
-              </div>
-            </div>
-            <ul class=\"flex-direction-nav\">
-              <li>
-                <a class=\"flex-prev\" href=\"#\"></a>
-              </li>
-              <li>
-                <a class=\"flex-next\" href=\"#\"></a>
-              </li>
-            </ul>
-          </div>
-
-        <a href=\"products.html\" class=\"btn brown\">view aur products</a>
-      </div>
-    </section>
-        
-    ";
-    }
-
-    // line 226
-    public function block_body($context, array $blocks = array())
-    {
-        // line 227
         echo "        
     ";
     }
 
-    // line 234
+    // line 90
+    public function block_body($context, array $blocks = array())
+    {
+        // line 91
+        echo "           
+    ";
+    }
+
+    // line 98
     public function block_footer($context, array $blocks = array())
     {
-        // line 235
+        // line 99
         echo "<footer id=\"footer\">
   <div class=\"container\">
     <div class=\"contact-phone\">Call Us Today.: <a href=\"tel:555.785.8965\"><strong>555. 785.8965</strong></a></div>
@@ -369,6 +223,6 @@ class __TwigTemplate_a79f1fa5322725204cb18c106c046101ffaea0f21043a051041d4378592
 
     public function getDebugInfo()
     {
-        return array (  346 => 235,  343 => 234,  338 => 227,  335 => 226,  249 => 142,  246 => 141,  188 => 85,  185 => 84,  170 => 65,  167 => 64,  162 => 61,  159 => 60,  133 => 24,  130 => 23,  124 => 10,  108 => 252,  106 => 234,  99 => 229,  97 => 226,  94 => 225,  92 => 141,  88 => 139,  86 => 84,  77 => 77,  75 => 64,  72 => 63,  70 => 60,  55 => 47,  53 => 23,  37 => 10,  27 => 2,);
+        return array (  200 => 99,  197 => 98,  192 => 91,  189 => 90,  184 => 85,  181 => 84,  166 => 65,  163 => 64,  158 => 61,  155 => 60,  129 => 24,  126 => 23,  120 => 10,  104 => 116,  102 => 98,  95 => 93,  93 => 90,  87 => 86,  85 => 84,  76 => 77,  74 => 64,  71 => 63,  69 => 60,  54 => 47,  52 => 23,  36 => 10,  26 => 2,);
     }
 }

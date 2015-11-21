@@ -19,6 +19,7 @@ class __TwigTemplate_610b03e1c72ac8b70fe0680f88af8c1dd433c97c2620a057dad3833c3db
 
         $this->blocks = array(
             'menu' => array($this, 'block_menu'),
+            'slide' => array($this, 'block_slide'),
         );
     }
 
@@ -42,6 +43,16 @@ class __TwigTemplate_610b03e1c72ac8b70fe0680f88af8c1dd433c97c2620a057dad3833c3db
 ";
     }
 
+    // line 7
+    public function block_slide($context, array $blocks = array())
+    {
+        // line 8
+        echo "    ";
+        echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('http_kernel')->controller("PISweet4uBundle:Sweet4u:slide"));
+        echo "
+";
+    }
+
     public function getTemplateName()
     {
         return "PISweet4uBundle::layout.html.twig";
@@ -54,6 +65,6 @@ class __TwigTemplate_610b03e1c72ac8b70fe0680f88af8c1dd433c97c2620a057dad3833c3db
 
     public function getDebugInfo()
     {
-        return array (  39 => 4,  36 => 3,  11 => 1,);
+        return array (  50 => 8,  47 => 7,  40 => 4,  37 => 3,  11 => 1,);
     }
 }
