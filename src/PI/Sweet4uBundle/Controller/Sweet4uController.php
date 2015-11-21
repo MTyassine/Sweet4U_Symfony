@@ -10,4 +10,9 @@ class Sweet4uController extends Controller
     {
         return $this->render('PISweet4uBundle:Template:Accueil.html.twig', array());
     }
+    
+    public function menuAction()
+    {
+        return $this->render('PISweet4uBundle:Template:menu.html.twig', array());
+    }
 }

@@ -10,12 +10,20 @@ class __TwigTemplate_a79f1fa5322725204cb18c106c046101ffaea0f21043a051041d4378592
         $this->parent = false;
 
         $this->blocks = array(
+            'title' => array($this, 'block_title'),
+            'share' => array($this, 'block_share'),
+            'menu' => array($this, 'block_menu'),
+            'recherche' => array($this, 'block_recherche'),
+            'slide' => array($this, 'block_slide'),
+            'topArticle' => array($this, 'block_topArticle'),
+            'body' => array($this, 'block_body'),
+            'footer' => array($this, 'block_footer'),
         );
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        // line 1
+        // line 2
         echo "<!DOCTYPE html>
 <html lang=\"en\">
 
@@ -24,7 +32,10 @@ class __TwigTemplate_a79f1fa5322725204cb18c106c046101ffaea0f21043a051041d4378592
   <meta charset=\"utf-8\">
   <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
   <meta name=\"viewport\" content=\"width=device-width, minimum-scale=1, maximum-scale=1, initial-scale=1.0, user-scalable=no\">
-  <title>Invisio</title>
+  <title>";
+        // line 10
+        $this->displayBlock('title', $context, $blocks);
+        echo "</title>
   <link rel=\"shortcut icon\" href=\"img/favicon.png\" type=\"image/png\">
   <link href=\"fonts/fonts.css\" rel=\"stylesheet\" type=\"text/css\">
   <link href=\"css/style.css\" rel=\"stylesheet\" type=\"text/css\">
@@ -36,7 +47,91 @@ class __TwigTemplate_a79f1fa5322725204cb18c106c046101ffaea0f21043a051041d4378592
 
 <header id=\"header\" class=\"hdTwo\">
   <div class=\"container\">
-\t<nav class=\"social\" id=\"headerShareLinksHover\">
+    
+    ";
+        // line 23
+        $this->displayBlock('share', $context, $blocks);
+        // line 47
+        echo "   <!-- 
+    <a href=\"#\" class=\"show-nav\"></a>
+    <a href=\"index-2.html\" class=\"logo mobile\">
+      <span class=\"icon\"></span>
+      <h1>Sweet4u</h1>
+      <strong>cakes</strong>
+    </a>
+    
+    -->
+    
+    <div class=\"hgroup\">
+      <a href=\"#\" class=\"close-nav\"></a>
+      
+      ";
+        // line 60
+        $this->displayBlock('menu', $context, $blocks);
+        // line 63
+        echo "      
+      ";
+        // line 64
+        $this->displayBlock('recherche', $context, $blocks);
+        // line 77
+        echo "      
+    </div>
+  </div>  
+</header>
+
+<div id=\"page\">
+    
+    ";
+        // line 84
+        $this->displayBlock('slide', $context, $blocks);
+        // line 139
+        echo "    
+  
+    ";
+        // line 141
+        $this->displayBlock('topArticle', $context, $blocks);
+        // line 225
+        echo "    
+    ";
+        // line 226
+        $this->displayBlock('body', $context, $blocks);
+        // line 229
+        echo "    
+        
+</div>
+
+<!-- FOOTER -->
+";
+        // line 234
+        $this->displayBlock('footer', $context, $blocks);
+        // line 252
+        echo "
+<script src=\"https://maps.googleapis.com/maps/api/js\"></script>
+<script src=\"//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js\"></script>
+<script src=\"js/jquery-2.1.3.min.js\"></script>
+<script src=\"js/skrollr.min.js\"></script>
+<script src=\"js/idangerous.swiper.min.js\"></script>
+<script src=\"js/jquery.circliful.min.js\"></script>
+<script src=\"js/main.js\"></script>
+</body>
+
+<!-- Mirrored from moonart.net.ua/htmlcut/cakes/invisio_cakes/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 Nov 2015 17:08:39 GMT -->
+</html>
+";
+    }
+
+    // line 10
+    public function block_title($context, array $blocks = array())
+    {
+        echo "Sweet4U";
+    }
+
+    // line 23
+    public function block_share($context, array $blocks = array())
+    {
+        // line 24
+        echo "    
+    <nav class=\"social\" id=\"headerShareLinksHover\">
       <a href=\"#\" class=\"share-link\"></a>
       <ul>
         <li class=\"facebook\" style=\"top:-65px;\" data-top=\"-65px\">
@@ -56,39 +151,23 @@ class __TwigTemplate_a79f1fa5322725204cb18c106c046101ffaea0f21043a051041d4378592
         </li>
       </ul>
     </nav>
+    
+    ";
+    }
 
-    <a href=\"#\" class=\"show-nav\"></a>
-    <a href=\"index-2.html\" class=\"logo mobile\">
-      <span class=\"icon\"></span>
-      <h1>Invisio</h1>
-      <strong>cakes</strong>
-    </a>
-    <div class=\"hgroup\">
-      <a href=\"#\" class=\"close-nav\"></a>
-      <nav class=\"main-nav\">
-        <ul class=\"left\">
-          <li><a class=\"active\" href=\"index-2.html\">Home</a></li>
-          <li><a href=\"about.html\">About</a></li>
-          <li><a href=\"products.html\">Products</a></li>
-        </ul>
-        <div class=\"wrap-logo\">
-          <a href=\"index-2.html\" class=\"logo\" title=\"Invisio\">
-            <span class=\"icon\"></span>
-            <h1>Invisio</h1>
-            <strong>cakes</strong>
-          </a>
-        </div>
-        <ul class=\"right\">
-          <li><a href=\"services.html\">Services</a></li>
-          <li class=\"menu-item-has-children close\"><a href=\"#\">Blog</a>
-          \t<ul class=\"submenu\">
-            \t<li><a href=\"blog.html\">Blog style 1</a></li>
-                <li><a href=\"blog_archive.html\">Blog style 2</a></li>
-            </ul>
-          </li>
-          <li><a href=\"contact_us.html\">Contact Us</a></li>
-        </ul>
-      </nav>
+    // line 60
+    public function block_menu($context, array $blocks = array())
+    {
+        // line 61
+        echo "      
+      ";
+    }
+
+    // line 64
+    public function block_recherche($context, array $blocks = array())
+    {
+        // line 65
+        echo "          
       <div class=\"search\">
         <a href=\"#\" class=\"search-link\"></a>
         <div class=\"search-form\">
@@ -98,11 +177,15 @@ class __TwigTemplate_a79f1fa5322725204cb18c106c046101ffaea0f21043a051041d4378592
           </form>
         </div>
       </div>
-    </div>
-  </div>  
-</header>
+      
+      ";
+    }
 
-<div id=\"page\">
+    // line 84
+    public function block_slide($context, array $blocks = array())
+    {
+        // line 85
+        echo "    
     <div class=\"home-slider full-height full-min-height\">
       <div class=\"fixed-baner\">
         <div class=\"swiper-container\">
@@ -155,7 +238,15 @@ class __TwigTemplate_a79f1fa5322725204cb18c106c046101ffaea0f21043a051041d4378592
         </div>
       </div>
     </div>
-  
+        
+    ";
+    }
+
+    // line 141
+    public function block_topArticle($context, array $blocks = array())
+    {
+        // line 142
+        echo "    
     <section class=\"home-services scale-text\">
       <div class=\"container\">
         <div class=\"section-title\">
@@ -236,178 +327,23 @@ class __TwigTemplate_a79f1fa5322725204cb18c106c046101ffaea0f21043a051041d4378592
         <a href=\"products.html\" class=\"btn brown\">view aur products</a>
       </div>
     </section>
+        
+    ";
+    }
 
-    <section class=\"home-products scale-text\">
-      <div class=\"swiper-container\">
-        <div class=\"swiper-wrapper\">
+    // line 226
+    public function block_body($context, array $blocks = array())
+    {
+        // line 227
+        echo "        
+    ";
+    }
 
-          <div class=\"swiper-slide\">
-            <div class=\"container\">
-              <div class=\"wrap\">
-                <div class=\"inner\">
-                  <div class=\"content\">
-                    <a href=\"#\" class=\"image hidden-xs-757\">
-                      <img src=\"temp/home_products_1.jpg\" alt=\"\">
-                    </a>
-                    <div class=\"information\">
-                      <div class=\"wrap\">
-                        <h4 class=\"name\"><a href=\"#\">Delicious pancakes </a></h4>
-                        <div class=\"description\">Suspendisse et mollis risus, ut congue nisl. Praesent sed facilisis dui. Mauris facilisis tincidunt vestibulum. Maecenas volutpat sagittis mauris sodales in.</div>
-                        <strong class=\"price\">\$4.58</strong>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class=\"swiper-slide\">
-            <div class=\"container\">
-              <div class=\"wrap\">
-                <div class=\"inner\">
-                  <div class=\"content\">
-                    <a href=\"#\" class=\"image hidden-xs-757\">
-                      <img src=\"temp/home_products_2.jpg\" alt=\"\">
-                    </a>
-                    <div class=\"information\">
-                      <div class=\"wrap\">
-                        <h4 class=\"name\"><a href=\"#\">Cupcakes with cream cheese </a></h4>
-                        <div class=\"description\">Suspendisse et mollis risus, ut congue nisl. Praesent sed facilisis dui. Mauris facilisis tincidunt vestibulum. Maecenas volutpat sagittis mauris sodales in.</div>
-                        <strong class=\"price\">\$4.58</strong>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class=\"swiper-slide\">
-            <div class=\"container\">
-              <div class=\"wrap\">
-                <div class=\"inner\">
-                  <div class=\"content\">
-                    <a href=\"#\" class=\"image hidden-xs-757\">
-                      <img src=\"temp/home_products_3.jpg\" alt=\"\">
-                    </a>
-                    <div class=\"information\">
-                      <div class=\"wrap\">
-                        <h4 class=\"name\"><a href=\"#\">Peach Smoothie</a></h4>
-                        <div class=\"description\">Suspendisse et mollis risus, ut congue nisl. Praesent sed facilisis dui. Mauris facilisis tincidunt vestibulum. Maecenas volutpat sagittis mauris sodales in.</div>
-                        <strong class=\"price\"><span class=\"through\">\$2.30</span> \$1.99</strong>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <ul class=\"flex-direction-nav\">
-          <li>
-            <a class=\"flex-prev\" href=\"#\"></a>
-          </li>
-          <li>
-            <a class=\"flex-next\" href=\"#\"></a>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class=\"home-our-services scale-text\">
-      <div class=\"container\">
-        <div class=\"section-title\">
-          <h2>Our <b>Services</b></h2>
-          <div class=\"description\">Proin mattis rutrum magna, et pretium erat tincidunt at. Donec lectus ipsum, pulvinar id sollicitudin id, bibendum vel quam. Suspendisse nec ante non lacus malesuada lobortis vel sed sem</div>
-        </div>
-        <div class=\"services\">
-          <ul class=\"items\">
-            <li class=\"item-1\">
-              <a href=\"#\" class=\"image\"></a>
-              <h3><a href=\"#\">Creative Birthday Pie</a></h3>
-              <div class=\"description\">Integer ipsum ipsum, suscipit et gravida non, imperdiet eget nisl. Curabitur semper semper nunc, id suscipit</div>
-            </li>
-            <li class=\"item-2\">
-              <a href=\"#\" class=\"image\"></a>
-              <h3><a href=\"#\">Delivery To Any Poin</a></h3>
-              <div class=\"description\">Nam ac mauris mattis dui pretium pulvinar at consequat purus. Fusce nec tellus at nunc</div>
-            </li>
-            <li class=\"item-3\">
-              <a href=\"#\" class=\"image\"></a>
-              <h3><a href=\"#\">Individual Solutions</a></h3>
-              <div class=\"description\">Proin eget eros felis. Donec scelerisque mattis porta. Cras ullamcorper venenatis vulputate. Phasellus faucibus, risus</div>
-            </li>
-          </ul>      
-        </div>
-        <a href=\"services.html\" class=\"btn brown\">view all aur services</a>
-      </div>
-    </section>
-
-    <section class=\"home-testimonials scale-text\">
-      <div class=\"container-fluid\">
-      <div class=\"section-title white\">
-        <h2>Clients <b>About Us</b></h2>
-        <div class=\"description\">Proin mattis rutrum magna, et pretium erat tincidunt at</div>
-      </div>
-
-      <div class=\"slider\">
-        <div class=\"swiper-container\">
-          <div class=\"swiper-wrapper\">
-            <div class=\"swiper-slide\">
-              <img src=\"temp/testimonials_1.png\" alt=\"\" class=\"hidden-xs\">
-              <div class=\"content\">
-                <div class=\"inner\">
-                  <blockquote>
-                    <p>Integer ipsum ipsum, suscipit et gravida non, imperdiet eget nisl. Curabitur semper semper nunc, id suscipit diam ornare quis. Duis posuere blandit imperdiet. Mauris ac tortor elit. Mauris vel risus et dui luctus congue at in quam.</p>
-                    <p>Duis est orci, luctus ut blandit vitae, volutpat in dolor.</p>
-                  </blockquote>
-                  <h4 class=\"author\">Jasmine Dou</h4>
-                </div>
-              </div>
-            </div>
-
-            <div class=\"swiper-slide\">
-              <img src=\"temp/testimonials_2.png\" alt=\"\" class=\"hidden-xs\">
-              <div class=\"content\">
-                <div class=\"inner\">
-                  <blockquote>
-                    <p>Pellentesque ullamcorper tincidunt elit, eu ultrices mauris gravida id. Suspendisse tortor lectus, sagittis in velit nec, imperdiet sollicitudin lacus. Vestibulum mollis lacus nibh, sit amet commodo odio tincidunt eu. Maecenas blandit ante lacus, vel semper tortor feugiat sed. Duis maximus ac dui eget fermentum. Nullam leo nisl, sodales quis quam nec, consectetur tincidunt dolor. Fusce feugiat lorem at diam egestas, ac ultrices purus pulvinar. </p>
-                  </blockquote>
-                  <h4 class=\"author\">Carolin Rayzer</h4>
-                </div>
-              </div>
-            </div>
-
-            <div class=\"swiper-slide\">
-              <img src=\"temp/testimonials_3.png\" alt=\"\" class=\"hidden-xs\">
-              <div class=\"content\">
-                <div class=\"inner\">
-                  <blockquote>
-                    <p>Cras vel ligula placerat, dictum nunc ac, tempus libero. Sed id sem at ipsum tristique luctus sed a enim. Sed diam massa, tempor sit amet dui quis, ornare venenatis risus.</p>
-                    <p>Quisque non ultrices turpis. Curabitur dapibus, neque in aliquam convallis, orci massa euismod nulla, sed euismod turpis metus et urna. Curabitur vestibulum egestas eros id consectetur. Aenean eget tempus ex. Sed vitae magna at nisl aliquet maximus ut vel odio.</p>
-                  </blockquote>
-                  <h4 class=\"author\">John Doe</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-          <ul class=\"flex-direction-nav\">
-            <li>
-              <a class=\"flex-prev\" href=\"#\"></a>
-            </li>
-            <li>
-              <a class=\"flex-next\" href=\"#\"></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      </div>
-    </section>
-</div>
-
-<!-- FOOTER -->
-<footer id=\"footer\">
+    // line 234
+    public function block_footer($context, array $blocks = array())
+    {
+        // line 235
+        echo "<footer id=\"footer\">
   <div class=\"container\">
     <div class=\"contact-phone\">Call Us Today.: <a href=\"tel:555.785.8965\"><strong>555. 785.8965</strong></a></div>
     <nav class=\"social-links\">
@@ -420,20 +356,9 @@ class __TwigTemplate_a79f1fa5322725204cb18c106c046101ffaea0f21043a051041d4378592
         <li class=\"large ico linkedin\"><a href=\"https://www.linkedin.com/\" class=\"rounded-ico large\" target=\"_blank\"></a></li>
       </ul>
     </nav>
-    <div class=\"copyright\">&#169; Invisio Cakes. All rights reserved.</div>
+    <div class=\"copyright\">&#169; Sweet4u. All rights reserved.</div>
   </div>
 </footer>
-
-<script src=\"https://maps.googleapis.com/maps/api/js\"></script>
-<script src=\"js/jquery-2.1.3.min.js\"></script>
-<script src=\"js/skrollr.min.js\"></script>
-<script src=\"js/idangerous.swiper.min.js\"></script>
-<script src=\"js/jquery.circliful.min.js\"></script>
-<script src=\"js/main.js\"></script>
-</body>
-
-<!-- Mirrored from moonart.net.ua/htmlcut/cakes/invisio_cakes/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 Nov 2015 17:08:39 GMT -->
-</html>
 ";
     }
 
@@ -444,6 +369,6 @@ class __TwigTemplate_a79f1fa5322725204cb18c106c046101ffaea0f21043a051041d4378592
 
     public function getDebugInfo()
     {
-        return array (  19 => 1,);
+        return array (  346 => 235,  343 => 234,  338 => 227,  335 => 226,  249 => 142,  246 => 141,  188 => 85,  185 => 84,  170 => 65,  167 => 64,  162 => 61,  159 => 60,  133 => 24,  130 => 23,  124 => 10,  108 => 252,  106 => 234,  99 => 229,  97 => 226,  94 => 225,  92 => 141,  88 => 139,  86 => 84,  77 => 77,  75 => 64,  72 => 63,  70 => 60,  55 => 47,  53 => 23,  37 => 10,  27 => 2,);
     }
 }

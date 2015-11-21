@@ -18,6 +18,7 @@ class __TwigTemplate_610b03e1c72ac8b70fe0680f88af8c1dd433c97c2620a057dad3833c3db
         }
 
         $this->blocks = array(
+            'menu' => array($this, 'block_menu'),
         );
     }
 
@@ -29,6 +30,16 @@ class __TwigTemplate_610b03e1c72ac8b70fe0680f88af8c1dd433c97c2620a057dad3833c3db
     protected function doDisplay(array $context, array $blocks = array())
     {
         $this->parent->display($context, array_merge($this->blocks, $blocks));
+    }
+
+    // line 3
+    public function block_menu($context, array $blocks = array())
+    {
+        // line 4
+        echo "    ";
+        echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('http_kernel')->controller("PISweet4uBundle:Sweet4u:menu"));
+        echo "
+";
     }
 
     public function getTemplateName()
@@ -43,6 +54,6 @@ class __TwigTemplate_610b03e1c72ac8b70fe0680f88af8c1dd433c97c2620a057dad3833c3db
 
     public function getDebugInfo()
     {
-        return array (  11 => 1,);
+        return array (  39 => 4,  36 => 3,  11 => 1,);
     }
 }
