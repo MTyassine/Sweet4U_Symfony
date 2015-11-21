@@ -17,6 +17,7 @@
       <parameter key="DoctrineBundle">Doctrine\Bundle\DoctrineBundle\DoctrineBundle</parameter>
       <parameter key="SensioFrameworkExtraBundle">Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle</parameter>
       <parameter key="AppBundle">AppBundle\AppBundle</parameter>
+      <parameter key="PISweet4uBundle">PI\Sweet4uBundle\PISweet4uBundle</parameter>
       <parameter key="DebugBundle">Symfony\Bundle\DebugBundle\DebugBundle</parameter>
       <parameter key="AcmeDemoBundle">Acme\DemoBundle\AcmeDemoBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
@@ -2974,6 +2975,10 @@
       <call method="addPath">
         <argument>C:\wamp\www\ESPRIT\Symfony\Seet4U_PIDev\Sweet4u\vendor\doctrine\doctrine-bundle/Resources/views</argument>
         <argument>Doctrine</argument>
+      </call>
+      <call method="addPath">
+        <argument>C:\wamp\www\ESPRIT\Symfony\Seet4U_PIDev\Sweet4u\src\PI\Sweet4uBundle/Resources/views</argument>
+        <argument>PISweet4u</argument>
       </call>
       <call method="addPath">
         <argument>C:\wamp\www\ESPRIT\Symfony\Seet4U_PIDev\Sweet4u\vendor\symfony\symfony\src\Symfony\Bundle\DebugBundle/Resources/views</argument>

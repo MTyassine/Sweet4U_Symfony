@@ -1,0 +1,4 @@
+services:
+#    pi_sweet4u.example:
+#        class: PI\Sweet4uBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

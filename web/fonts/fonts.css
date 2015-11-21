@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Lily Script One';
+    src: url('lilyscriptone-regular.eot');
+    src: url('lilyscriptone-regular.eot') format('embedded-opentype'),
+         url('lilyscriptone-regular.woff2') format('woff2'),
+         url('lilyscriptone-regular.woff') format('woff'),
+         url('lilyscriptone-regular.ttf') format('truetype'),
+         url('lilyscriptone-regular.svg#LilyScriptOneRegular') format('svg');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Old Standard TT';
+    src: url('oldstandard-regular.eot');
+    src: url('oldstandard-regular.eot') format('embedded-opentype'),
+         url('oldstandard-regular.woff2') format('woff2'),
+         url('oldstandard-regular.woff') format('woff'),
+         url('oldstandard-regular.ttf') format('truetype'),
+         url('oldstandard-regular.svg#OldStandardTTRegular') format('svg');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Old Standard TT';
+    src: url('oldstandard-bold.eot');
+    src: url('oldstandard-bold.eot') format('embedded-opentype'),
+         url('oldstandard-bold.woff2') format('woff2'),
+         url('oldstandard-bold.woff') format('woff'),
+         url('oldstandard-bold.ttf') format('truetype'),
+         url('oldstandard-bold.svg#OldStandardTTBold') format('svg');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Old Standard TT';
+    src: url('oldstandard-italic.eot');
+    src: url('oldstandard-italic.eot') format('embedded-opentype'),
+         url('oldstandard-italic.woff2') format('woff2'),
+         url('oldstandard-italic.woff') format('woff'),
+         url('oldstandard-italic.ttf') format('truetype'),
+         url('oldstandard-italic.svg#OldStandardTTItalic') format('svg');
+    font-style: italic;
+    font-weight: 400;
+}

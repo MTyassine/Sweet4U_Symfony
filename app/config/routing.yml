@@ -1,3 +1,7 @@
+pi_sweet4u:
+    resource: "@PISweet4uBundle/Resources/config/routing.yml"
+    prefix:   /
+
 app:
     resource: @AppBundle/Controller/
     type:     annotation

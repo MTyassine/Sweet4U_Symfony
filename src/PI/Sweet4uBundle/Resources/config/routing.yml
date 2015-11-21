@@ -1,0 +1,7 @@
+pi_sweet4u_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: PISweet4uBundle:Default:index }
+
+pi_sweet4u_Accueil:
+    path:     /
+    defaults: { _controller: PISweet4uBundle:Sweet4u:index }
