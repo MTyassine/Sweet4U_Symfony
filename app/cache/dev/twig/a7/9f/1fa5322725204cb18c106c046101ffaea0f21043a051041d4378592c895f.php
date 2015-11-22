@@ -11,6 +11,7 @@ class __TwigTemplate_a79f1fa5322725204cb18c106c046101ffaea0f21043a051041d4378592
 
         $this->blocks = array(
             'title' => array($this, 'block_title'),
+            'compte' => array($this, 'block_compte'),
             'share' => array($this, 'block_share'),
             'menu' => array($this, 'block_menu'),
             'recherche' => array($this, 'block_recherche'),
@@ -45,12 +46,18 @@ class __TwigTemplate_a79f1fa5322725204cb18c106c046101ffaea0f21043a051041d4378592
 </div>
 
 <header id=\"header\" class=\"hdTwo\">
+    
+    ";
+        // line 22
+        $this->displayBlock('compte', $context, $blocks);
+        // line 34
+        echo "    
   <div class=\"container\">
     
     ";
-        // line 23
+        // line 37
         $this->displayBlock('share', $context, $blocks);
-        // line 47
+        // line 61
         echo "   <!-- 
     <a href=\"#\" class=\"show-nav\"></a>
     <a href=\"index-2.html\" class=\"logo mobile\">
@@ -65,14 +72,14 @@ class __TwigTemplate_a79f1fa5322725204cb18c106c046101ffaea0f21043a051041d4378592
       <a href=\"#\" class=\"close-nav\"></a>
       
       ";
-        // line 60
+        // line 74
         $this->displayBlock('menu', $context, $blocks);
-        // line 63
+        // line 77
         echo "      
       ";
-        // line 64
+        // line 78
         $this->displayBlock('recherche', $context, $blocks);
-        // line 77
+        // line 91
         echo "      
     </div>
   </div>  
@@ -81,26 +88,26 @@ class __TwigTemplate_a79f1fa5322725204cb18c106c046101ffaea0f21043a051041d4378592
 <div id=\"page\">
     
     ";
-        // line 84
+        // line 98
         $this->displayBlock('slide', $context, $blocks);
-        // line 86
+        // line 100
         echo "    
     
     
     
     ";
-        // line 90
+        // line 104
         $this->displayBlock('body', $context, $blocks);
-        // line 93
+        // line 107
         echo "    
         
 </div>
 
 <!-- FOOTER -->
 ";
-        // line 98
+        // line 112
         $this->displayBlock('footer', $context, $blocks);
-        // line 116
+        // line 130
         echo "
 <script src=\"https://maps.googleapis.com/maps/api/js\"></script>
 <script src=\"//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js\"></script>
@@ -122,10 +129,27 @@ class __TwigTemplate_a79f1fa5322725204cb18c106c046101ffaea0f21043a051041d4378592
         echo "Sweet4U";
     }
 
-    // line 23
+    // line 22
+    public function block_compte($context, array $blocks = array())
+    {
+        // line 23
+        echo "        
+    <div class=\"header-top-in\" style=\"margin-left: 20%; margin-bottom: 1%\">
+
+    
+    <a href=\"#\" ><img src=\"img/login.png\" alt=\"\" style=\"height: 25px; width: 25px\"> Login</a>
+    <a href=\"#\" style=\"margin-left: 2%\"><img src=\"img/compte.png\" alt=\"\" style=\"height: 25px; width: 25px\"> Create an Account</a>
+    <a href=\"#\" style=\"margin-left: 40%\"><img src=\"img/panier.png\" alt=\"\" style=\"height: 25px; width: 25px\"> \$0.00 (0 items)</a>
+    
+    </div>
+        
+    ";
+    }
+
+    // line 37
     public function block_share($context, array $blocks = array())
     {
-        // line 24
+        // line 38
         echo "    
     <nav class=\"social\" id=\"headerShareLinksHover\">
       <a href=\"#\" class=\"share-link\"></a>
@@ -151,18 +175,18 @@ class __TwigTemplate_a79f1fa5322725204cb18c106c046101ffaea0f21043a051041d4378592
     ";
     }
 
-    // line 60
+    // line 74
     public function block_menu($context, array $blocks = array())
     {
-        // line 61
+        // line 75
         echo "      
       ";
     }
 
-    // line 64
+    // line 78
     public function block_recherche($context, array $blocks = array())
     {
-        // line 65
+        // line 79
         echo "          
       <div class=\"search\">
         <a href=\"#\" class=\"search-link\"></a>
@@ -177,26 +201,26 @@ class __TwigTemplate_a79f1fa5322725204cb18c106c046101ffaea0f21043a051041d4378592
       ";
     }
 
-    // line 84
+    // line 98
     public function block_slide($context, array $blocks = array())
     {
-        // line 85
+        // line 99
         echo "        
     ";
     }
 
-    // line 90
+    // line 104
     public function block_body($context, array $blocks = array())
     {
-        // line 91
+        // line 105
         echo "           
     ";
     }
 
-    // line 98
+    // line 112
     public function block_footer($context, array $blocks = array())
     {
-        // line 99
+        // line 113
         echo "<footer id=\"footer\">
   <div class=\"container\">
     <div class=\"contact-phone\">Call Us Today.: <a href=\"tel:555.785.8965\"><strong>555. 785.8965</strong></a></div>
@@ -223,6 +247,6 @@ class __TwigTemplate_a79f1fa5322725204cb18c106c046101ffaea0f21043a051041d4378592
 
     public function getDebugInfo()
     {
-        return array (  200 => 99,  197 => 98,  192 => 91,  189 => 90,  184 => 85,  181 => 84,  166 => 65,  163 => 64,  158 => 61,  155 => 60,  129 => 24,  126 => 23,  120 => 10,  104 => 116,  102 => 98,  95 => 93,  93 => 90,  87 => 86,  85 => 84,  76 => 77,  74 => 64,  71 => 63,  69 => 60,  54 => 47,  52 => 23,  36 => 10,  26 => 2,);
+        return array (  224 => 113,  221 => 112,  216 => 105,  213 => 104,  208 => 99,  205 => 98,  190 => 79,  187 => 78,  182 => 75,  179 => 74,  153 => 38,  150 => 37,  136 => 23,  133 => 22,  127 => 10,  111 => 130,  109 => 112,  102 => 107,  100 => 104,  94 => 100,  92 => 98,  83 => 91,  81 => 78,  78 => 77,  76 => 74,  61 => 61,  59 => 37,  54 => 34,  52 => 22,  37 => 10,  27 => 2,);
     }
 }

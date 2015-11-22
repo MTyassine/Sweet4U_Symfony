@@ -19,8 +19,14 @@ class __TwigTemplate_79631bac1132405055f006dadf0cdf5210f30749e5e4b53628b16abb3e9
         echo "
 <nav class=\"main-nav\">
         <ul class=\"left\">
-          <li><a class=\"active\" href=\"index-2.html\">Accueil</a></li>
-          <li><a href=\"about.html\">à propos</a></li>
+          <li><a class=\"active\" href=\"";
+        // line 4
+        echo $this->env->getExtension('routing')->getPath("pi_sweet4u_Accueil");
+        echo "\">Accueil</a></li>
+          <li><a href=\"";
+        // line 5
+        echo $this->env->getExtension('routing')->getPath("pi_sweet4u_apropos");
+        echo "\">à propos</a></li>
           <li><a href=\"";
         // line 6
         echo $this->env->getExtension('routing')->getPath("pi_sweet4u_ListePatisserie");
@@ -30,7 +36,10 @@ class __TwigTemplate_79631bac1132405055f006dadf0cdf5210f30749e5e4b53628b16abb3e9
     <!-- ------------ logo ------------------- -->
       
         <div class=\"wrap-logo\">
-          <a href=\"index-2.html\" class=\"logo\" title=\"Invisio\">
+          <a href=\"";
+        // line 12
+        echo $this->env->getExtension('routing')->getPath("pi_sweet4u_Accueil");
+        echo "\" class=\"logo\" title=\"Sweet4U\">
             <span class=\"icon\"></span>
             <h1>Sweet4U</h1>
             <strong>cakes</strong>
@@ -40,17 +49,23 @@ class __TwigTemplate_79631bac1132405055f006dadf0cdf5210f30749e5e4b53628b16abb3e9
     <!-- ------------------------------------- -->
     
         <ul class=\"right\">
-          <li><a href=\"services.html\">Services</a></li>
+          <li><a href=\"";
+        // line 22
+        echo $this->env->getExtension('routing')->getPath("pi_sweet4u_service");
+        echo "\">Services</a></li>
           <li class=\"menu-item-has-children close\"><a href=\"#\">Compte</a>
           \t<ul class=\"submenu\">
             \t<li><a href=\"";
         // line 25
         echo $this->env->getExtension('routing')->getPath("pi_sweet4u_Compte");
         echo "\">Parametre</a></li>
-                <li><a href=\"blog_archive.html\">Commande</a></li>
+                <li><a href=\"#\">Commande</a></li>
             </ul>
           </li>
-          <li><a href=\"contact_us.html\">Contact</a></li>
+          <li><a href=\"";
+        // line 29
+        echo $this->env->getExtension('routing')->getPath("pi_sweet4u_contact");
+        echo "\">Contact</a></li>
         </ul>
       </nav>
 ";
@@ -68,6 +83,6 @@ class __TwigTemplate_79631bac1132405055f006dadf0cdf5210f30749e5e4b53628b16abb3e9
 
     public function getDebugInfo()
     {
-        return array (  48 => 25,  26 => 6,  19 => 1,);
+        return array (  67 => 29,  60 => 25,  54 => 22,  41 => 12,  32 => 6,  28 => 5,  24 => 4,  19 => 1,);
     }
 }

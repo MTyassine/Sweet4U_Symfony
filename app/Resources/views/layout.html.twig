@@ -18,6 +18,20 @@
 </div>
 
 <header id="header" class="hdTwo">
+    
+    {% block compte %}
+        
+    <div class="header-top-in" style="margin-left: 20%; margin-bottom: 1%">
+
+    
+    <a href="#" ><img src="img/login.png" alt="" style="height: 25px; width: 25px"> Login</a>
+    <a href="#" style="margin-left: 2%"><img src="img/compte.png" alt="" style="height: 25px; width: 25px"> Create an Account</a>
+    <a href="#" style="margin-left: 40%"><img src="img/panier.png" alt="" style="height: 25px; width: 25px"> $0.00 (0 items)</a>
+    
+    </div>
+        
+    {% endblock %}
+    
   <div class="container">
     
     {% block share %}
