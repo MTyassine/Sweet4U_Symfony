@@ -1,0 +1,40 @@
+PI\Sweet4uBundle\Entity\Unecommande:
+    type: entity
+    table: unecommande
+    indexes:
+        id_commande:
+            columns:
+                - id_commande
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        idArticle:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: id_article
+        quantite:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+            comment: ''
+    manyToOne:
+        idCommande:
+            targetEntity: Commande
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_commande:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

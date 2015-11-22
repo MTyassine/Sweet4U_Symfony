@@ -1,0 +1,68 @@
+PI\Sweet4uBundle\Entity\Commentaire:
+    type: entity
+    table: commentaire
+    indexes:
+        id_p:
+            columns:
+                - id_p
+                - id_article
+        id_article:
+            columns:
+                - id_article
+        IDX_67F068BC459234CE:
+            columns:
+                - id_p
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        date:
+            type: date
+            nullable: false
+            comment: ''
+        commentaire:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: ''
+        signalement:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            default: '0'
+            column: Signalement
+        visible:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            default: '1'
+            column: Visible
+    manyToOne:
+        idArticle:
+            targetEntity: Article
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_article:
+                    referencedColumnName: id
+            orphanRemoval: false
+        idP:
+            targetEntity: Personne
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_p:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

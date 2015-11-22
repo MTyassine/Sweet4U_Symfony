@@ -1,0 +1,62 @@
+PI\Sweet4uBundle\Entity\Reclamation:
+    type: entity
+    table: reclamation
+    indexes:
+        id_from:
+            columns:
+                - id_from
+                - id_to
+        id_to:
+            columns:
+                - id_to
+        IDX_CE606404323ABD72:
+            columns:
+                - id_from
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        sujet:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: ''
+        contenu:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: ''
+        lu:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            default: '0'
+    manyToOne:
+        idTo:
+            targetEntity: Personne
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_to:
+                    referencedColumnName: id
+            orphanRemoval: false
+        idFrom:
+            targetEntity: Personne
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_from:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

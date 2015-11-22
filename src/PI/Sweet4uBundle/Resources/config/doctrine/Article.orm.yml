@@ -1,0 +1,47 @@
+PI\Sweet4uBundle\Entity\Article:
+    type: entity
+    table: article
+    indexes:
+        id_catalogue:
+            columns:
+                - id_catalogue
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        nom:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: ''
+        prix:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+            comment: ''
+        prixPromo:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+            comment: ''
+            column: prix_promo
+    manyToOne:
+        idCatalogue:
+            targetEntity: Catalogue
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_catalogue:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

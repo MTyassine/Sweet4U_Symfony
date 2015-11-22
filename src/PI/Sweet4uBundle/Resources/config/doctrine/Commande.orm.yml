@@ -1,0 +1,82 @@
+PI\Sweet4uBundle\Entity\Commande:
+    type: entity
+    table: commande
+    indexes:
+        id_c:
+            columns:
+                - id_c
+                - id_rp
+        id_rp:
+            columns:
+                - id_rp
+        articles:
+            columns:
+                - articles
+        IDX_6EEAA67DC12C7510:
+            columns:
+                - id_c
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        payement:
+            type: boolean
+            nullable: false
+            comment: ''
+        validation:
+            type: boolean
+            nullable: false
+            comment: ''
+        modeP:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: ''
+            column: mode_p
+        modeL:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: ''
+            column: mode_l
+        articles:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: ''
+        prixTotal:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+            comment: ''
+            column: prix_total
+    manyToOne:
+        idRp:
+            targetEntity: ResponsablePatissier
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_rp:
+                    referencedColumnName: id
+            orphanRemoval: false
+        idC:
+            targetEntity: Client
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_c:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }
