@@ -18,6 +18,14 @@ pi_sweet4u_contact:
     path:     /contact
     defaults: { _controller: PISweet4uBundle:Sweet4u:contact }
     
+pi_sweet4u_Authentification:
+    path:     /contact
+    defaults: { _controller: PISweet4uBundle:Sweet4u:autentif }
+    
+pi_sweet4u_CréeCompte:
+    path:     /contact
+    defaults: { _controller: PISweet4uBundle:Sweet4u:cree }
+    
 pi_sweet4u_ListePatisserie:
     path:     /liste-patisserie
     defaults: { _controller: PISweet4uBundle:Client:listePatisserie }
@@ -51,6 +59,30 @@ pi_sweet4u_GestionCommentaire:
     defaults: { _controller: PISweet4uBundle:Admin:GestionCommentaire }
     
 pi_sweet4u_BloquerCompte:
-    path:     /gestion-commentaire
+    path:     /Block
     defaults: { _controller: PISweet4uBundle:Admin:Block }
+    
+pi_sweet4u_ListeAdresse:
+    path:     /Liste-Patisserie
+    defaults: { _controller: PISweet4uBundle:Responsable:listePatisserie }
+    
+pi_sweet4u_AjouterPatisserie:
+    path:     /ajouter-patisserie
+    defaults: { _controller: PISweet4uBundle:Responsable:ajouterPatisserie }
+    
+pi_sweet4u_ListeCataloguePatisserie:
+    path:     /ListeCatalogue
+    defaults: { _controller: PISweet4uBundle:Responsable:cataloguePatisserie }
+    
+pi_sweet4u_AjouterCatalogue:
+    path:     /ajouter-catalogue
+    defaults: { _controller: PISweet4uBundle:Responsable:ajouterCatalogue }
+
+pi_sweet4u_ArticleCatalogue:
+    path:     /article-catalogue
+    defaults: { _controller: PISweet4uBundle:Responsable:articleCatalogue }
+    
+pi_sweet4u_AjouterArticle:
+    path:     /ajouter-article
+    defaults: { _controller: PISweet4uBundle:Responsable:ajouterArticle }
     
