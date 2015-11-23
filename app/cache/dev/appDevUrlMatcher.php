@@ -151,22 +151,9 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'PI\\Sweet4uBundle\\Controller\\Sweet4uController::serviceAction',  '_route' => 'pi_sweet4u_service',);
         }
 
-        if (0 === strpos($pathinfo, '/contact')) {
-            // pi_sweet4u_contact
-            if ($pathinfo === '/contact') {
-                return array (  '_controller' => 'PI\\Sweet4uBundle\\Controller\\Sweet4uController::contactAction',  '_route' => 'pi_sweet4u_contact',);
-            }
-
-            // pi_sweet4u_Authentification
-            if ($pathinfo === '/contact') {
-                return array (  '_controller' => 'PI\\Sweet4uBundle\\Controller\\Sweet4uController::autentifAction',  '_route' => 'pi_sweet4u_Authentification',);
-            }
-
-            // pi_sweet4u_CréeCompte
-            if ($pathinfo === '/contact') {
-                return array (  '_controller' => 'PI\\Sweet4uBundle\\Controller\\Sweet4uController::creeAction',  '_route' => 'pi_sweet4u_CréeCompte',);
-            }
-
+        // pi_sweet4u_contact
+        if ($pathinfo === '/contact') {
+            return array (  '_controller' => 'PI\\Sweet4uBundle\\Controller\\Sweet4uController::contactAction',  '_route' => 'pi_sweet4u_contact',);
         }
 
         // pi_sweet4u_ListePatisserie

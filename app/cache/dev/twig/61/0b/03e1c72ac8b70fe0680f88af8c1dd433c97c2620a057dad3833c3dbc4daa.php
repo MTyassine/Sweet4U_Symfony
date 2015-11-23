@@ -20,6 +20,7 @@ class __TwigTemplate_610b03e1c72ac8b70fe0680f88af8c1dd433c97c2620a057dad3833c3db
         $this->blocks = array(
             'menu' => array($this, 'block_menu'),
             'slide' => array($this, 'block_slide'),
+            'compte' => array($this, 'block_compte'),
         );
     }
 
@@ -53,6 +54,20 @@ class __TwigTemplate_610b03e1c72ac8b70fe0680f88af8c1dd433c97c2620a057dad3833c3db
 ";
     }
 
+    // line 11
+    public function block_compte($context, array $blocks = array())
+    {
+        // line 12
+        echo "    ";
+        echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('http_kernel')->controller("PISweet4uBundle:Sweet4u:autentif"));
+        echo "
+    ";
+        // line 13
+        echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('http_kernel')->controller("PISweet4uBundle:Sweet4u:cree"));
+        echo "
+";
+    }
+
     public function getTemplateName()
     {
         return "PISweet4uBundle::layout.html.twig";
@@ -65,6 +80,6 @@ class __TwigTemplate_610b03e1c72ac8b70fe0680f88af8c1dd433c97c2620a057dad3833c3db
 
     public function getDebugInfo()
     {
-        return array (  50 => 8,  47 => 7,  40 => 4,  37 => 3,  11 => 1,);
+        return array (  66 => 13,  61 => 12,  58 => 11,  51 => 8,  48 => 7,  41 => 4,  38 => 3,  11 => 1,);
     }
 }

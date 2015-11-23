@@ -13,7 +13,7 @@ class Sweet4uController extends Controller
     
     public function autentifAction()
     {
-        return $this->render('PISweet4uBundle:Template:Autentification.html.twig', array());
+        return $this->render('PISweet4uBundle:Template:Authentification.html.twig', array());
     }
     
     public function creeAction()

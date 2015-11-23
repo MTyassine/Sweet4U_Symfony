@@ -7,36 +7,35 @@ class __TwigTemplate_ca86fa03fed0359a8887f9445b6ec61fc0075eec227f4fc9bca3623aaf6
     {
         parent::__construct($env);
 
-        // line 1
-        try {
-            $this->parent = $this->env->loadTemplate("PISweet4uBundle::layout.html.twig");
-        } catch (Twig_Error_Loader $e) {
-            $e->setTemplateFile($this->getTemplateName());
-            $e->setTemplateLine(1);
-
-            throw $e;
-        }
+        $this->parent = false;
 
         $this->blocks = array(
-            'body' => array($this, 'block_body'),
         );
-    }
-
-    protected function doGetParent(array $context)
-    {
-        return "PISweet4uBundle::layout.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $this->parent->display($context, array_merge($this->blocks, $blocks));
-    }
+        // line 1
+        echo "
 
-    // line 3
-    public function block_body($context, array $blocks = array())
-    {
-        // line 4
-        echo "    <h1>Crée Compte Client ou Responsable Patisserie</h1>
+<a href=\"#openModal\" style=\"margin-left: 2%\"><img src=\"";
+        // line 3
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("img/compte.png"), "html", null, true);
+        echo "\" alt=\"\" style=\"height: 25px; width: 25px\"> Create an Account</a>
+
+
+<div id=\"openModal\" class=\"modalDialog\">
+\t<div>
+\t\t<a href=\"#close\" title=\"Close\" class=\"close\">X</a>
+\t\t<h2>Modal Box</h2>
+\t\t<p>This is a sample modal box that can be created using the powers of CSS3.</p>
+\t\t<p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+\t</div>
+</div>
+
+
+
+
 ";
     }
 
@@ -52,6 +51,6 @@ class __TwigTemplate_ca86fa03fed0359a8887f9445b6ec61fc0075eec227f4fc9bca3623aaf6
 
     public function getDebugInfo()
     {
-        return array (  39 => 4,  36 => 3,  11 => 1,);
+        return array (  23 => 3,  19 => 1,);
     }
 }

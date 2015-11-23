@@ -11,6 +11,8 @@
   <link rel="shortcut icon" href="{{ asset ('img/favicon.png')}}" type="image/png">
   <link href="{{ asset ('fonts/fonts.css')}}" rel="stylesheet" type="text/css">
   <link href="{{ asset ('css/style.css')}}" rel="stylesheet" type="text/css">
+  <link href="{{ asset ('css/popup.css')}}" rel="stylesheet" type="text/css">
+
 </head>
 <body>
 <div id="loader">
@@ -19,18 +21,15 @@
 
 <header id="header" class="hdTwo">
     
-    {% block compte %}
-        
     <div class="header-top-in" style="margin-left: 20%; margin-bottom: 1%">
-
-    
-    <a href="#" ><img src="{{ asset ('img/login.png') }}" alt="" style="height: 25px; width: 25px;"> Login</a>
-    <a href="#" style="margin-left: 2%"><img src="{{ asset ('img/compte.png')}}" alt="" style="height: 25px; width: 25px"> Create an Account</a>
-    <a href="#" style="margin-left: 40%"><img src="{{ asset ('img/panier.png')}}" alt="" style="height: 25px; width: 25px"> $0.00 (0 items)</a>
-    
-    </div>
         
+        
+    {% block compte %}
+    
     {% endblock %}
+    
+    <a href="#" style="margin-left: 40%"><img src="{{ asset ('img/panier.png')}}" alt="" style="height: 25px; width: 25px"> $0.00 (0 items)</a>
+    </div>
     
   <div class="container">
     
@@ -135,6 +134,8 @@
 <script src="{{ asset ('js/idangerous.swiper.min.js')}}"></script>
 <script src="{{ asset ('js/jquery.circliful.min.js')}}"></script>
 <script src="{{ asset ('js/main.js')}}"></script>
+<script src="{{ asset ('js/jquery.lightbox_me.js')}}"></script>
+<script src="{{ asset ('js/jquery.popupoverlay.js')}}"></script>
 </body>
 
 <!-- Mirrored from moonart.net.ua/htmlcut/cakes/invisio_cakes/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 Nov 2015 17:08:39 GMT -->

@@ -55,17 +55,20 @@ class __TwigTemplate_79631bac1132405055f006dadf0cdf5210f30749e5e4b53628b16abb3e9
         // line 24
         echo $this->env->getExtension('routing')->getPath("pi_sweet4u_service");
         echo "\">Services</a></li>
+          
+          <!--
           <li class=\"menu-item-has-children close\"><a href=\"#\">Compte</a>
           \t<ul class=\"submenu\">
             \t<li><a href=\"";
-        // line 27
+        // line 29
         echo $this->env->getExtension('routing')->getPath("pi_sweet4u_Compte");
         echo "\">Parametre</a></li>
                 <li><a href=\"#\">Commande</a></li>
             </ul>
           </li>
+          -->
           <li><a href=\"";
-        // line 31
+        // line 34
         echo $this->env->getExtension('routing')->getPath("pi_sweet4u_contact");
         echo "\">Contact</a></li>
         </ul>
@@ -85,6 +88,6 @@ class __TwigTemplate_79631bac1132405055f006dadf0cdf5210f30749e5e4b53628b16abb3e9
 
     public function getDebugInfo()
     {
-        return array (  69 => 31,  62 => 27,  56 => 24,  43 => 14,  34 => 8,  30 => 7,  26 => 6,  19 => 1,);
+        return array (  72 => 34,  64 => 29,  56 => 24,  43 => 14,  34 => 8,  30 => 7,  26 => 6,  19 => 1,);
     }
 }

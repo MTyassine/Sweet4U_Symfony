@@ -2,4 +2,31 @@
 
 {% block body %}
     <h1>List Articles</h1>
+    <div class="page-title">
+      <h1>Our <b>Products</b></h1>
+          <div class="drop">
+               <label for="text-label">Filter by:</label>       
+                      <input type="text" value="All" id="text-label"/>
+                      <a href="#" class="drop-list"></a>
+                        <span>
+                            <a href="#" class="filter" data-filter="all">All</a>
+                            <a href="#" class="filter" data-filter=".cakes">Cakes</a>
+                            <a href="#" class="filter" data-filter=".pies">Pies</a>
+                            <a href="#" class="filter" data-filter=".donuts">Donuts</a>
+                        </span>
+          </div>
+    </div>
+    
+    <div class="content product-animation">
+        <ul class="items loaded-content container-mix">
+    
+    {% block article %}
+        {{ render(controller("PISweet4uBundle:Client:ModelArticle")) }}
+    {% endblock %}
+    
+        </ul>
+      <div class="clr"></div>
+      <a href="#" id="itemLoad" class="show-more-items ico arrow-down large">
+      <span class="rounded-ico large"></span></a>
+    </div>
 {% endblock %}

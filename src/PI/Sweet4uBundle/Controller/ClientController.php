@@ -19,12 +19,17 @@ class ClientController extends Controller
     
     public function listeArticleAction()
     {
-        return $this->render('PISweet4uBundle:Client:ListeArticle.html.twig', array());
+        return $this->render('PISweet4uBundle:Client:ListArticle.html.twig', array());
     }
     
     public function articleAction()
     {
         return $this->render('PISweet4uBundle:Client:Article.html.twig', array());
+    }
+    
+    public function ModelArticleAction()
+    {
+        return $this->render('PISweet4uBundle:Client:ModelArticle.html.twig', array());
     }
     
     public function panierAction()

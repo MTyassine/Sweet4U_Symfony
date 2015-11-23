@@ -48,28 +48,42 @@ class __TwigTemplate_a79f1fa5322725204cb18c106c046101ffaea0f21043a051041d4378592
         // line 13
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("css/style.css"), "html", null, true);
         echo "\" rel=\"stylesheet\" type=\"text/css\">
+  <link href=\"";
+        // line 14
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("css/popup.css"), "html", null, true);
+        echo "\" rel=\"stylesheet\" type=\"text/css\">
+
 </head>
 <body>
 <div id=\"loader\">
     <img src=\"";
-        // line 17
+        // line 19
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("img/loader.gif"), "html", null, true);
         echo "\" alt=\"loader\">
 </div>
 
 <header id=\"header\" class=\"hdTwo\">
     
+    <div class=\"header-top-in\" style=\"margin-left: 20%; margin-bottom: 1%\">
+        
+        
     ";
-        // line 22
+        // line 27
         $this->displayBlock('compte', $context, $blocks);
-        // line 34
+        // line 30
         echo "    
+    <a href=\"#\" style=\"margin-left: 40%\"><img src=\"";
+        // line 31
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("img/panier.png"), "html", null, true);
+        echo "\" alt=\"\" style=\"height: 25px; width: 25px\"> \$0.00 (0 items)</a>
+    </div>
+    
   <div class=\"container\">
     
     ";
-        // line 37
+        // line 36
         $this->displayBlock('share', $context, $blocks);
-        // line 61
+        // line 60
         echo "   <!-- 
     <a href=\"#\" class=\"show-nav\"></a>
     <a href=\"index-2.html\" class=\"logo mobile\">
@@ -84,14 +98,14 @@ class __TwigTemplate_a79f1fa5322725204cb18c106c046101ffaea0f21043a051041d4378592
       <a href=\"#\" class=\"close-nav\"></a>
       
       ";
-        // line 74
+        // line 73
         $this->displayBlock('menu', $context, $blocks);
-        // line 77
+        // line 76
         echo "      
       ";
-        // line 78
+        // line 77
         $this->displayBlock('recherche', $context, $blocks);
-        // line 91
+        // line 90
         echo "      
     </div>
   </div>  
@@ -100,48 +114,56 @@ class __TwigTemplate_a79f1fa5322725204cb18c106c046101ffaea0f21043a051041d4378592
 <div id=\"page\">
     
     ";
-        // line 98
+        // line 97
         $this->displayBlock('slide', $context, $blocks);
-        // line 100
+        // line 99
         echo "    
     
     
     
     ";
-        // line 104
+        // line 103
         $this->displayBlock('body', $context, $blocks);
-        // line 107
+        // line 106
         echo "    
         
 </div>
 
 <!-- FOOTER -->
 ";
-        // line 112
+        // line 111
         $this->displayBlock('footer', $context, $blocks);
-        // line 130
+        // line 129
         echo "
 <script src=\"https://maps.googleapis.com/maps/api/js\"></script>
 <script src=\"//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js\"></script>
 <script src=\"";
-        // line 133
+        // line 132
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/jquery-2.1.3.min.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 134
+        // line 133
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/skrollr.min.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 135
+        // line 134
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/idangerous.swiper.min.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 136
+        // line 135
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/jquery.circliful.min.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 137
+        // line 136
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/main.js"), "html", null, true);
+        echo "\"></script>
+<script src=\"";
+        // line 137
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/jquery.lightbox_me.js"), "html", null, true);
+        echo "\"></script>
+<script src=\"";
+        // line 138
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/jquery.popupoverlay.js"), "html", null, true);
         echo "\"></script>
 </body>
 
@@ -156,36 +178,18 @@ class __TwigTemplate_a79f1fa5322725204cb18c106c046101ffaea0f21043a051041d4378592
         echo "Sweet4U";
     }
 
-    // line 22
+    // line 27
     public function block_compte($context, array $blocks = array())
     {
-        // line 23
-        echo "        
-    <div class=\"header-top-in\" style=\"margin-left: 20%; margin-bottom: 1%\">
-
-    
-    <a href=\"#\" ><img src=\"";
-        // line 27
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("img/login.png"), "html", null, true);
-        echo "\" alt=\"\" style=\"height: 25px; width: 25px;\"> Login</a>
-    <a href=\"#\" style=\"margin-left: 2%\"><img src=\"";
         // line 28
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("img/compte.png"), "html", null, true);
-        echo "\" alt=\"\" style=\"height: 25px; width: 25px\"> Create an Account</a>
-    <a href=\"#\" style=\"margin-left: 40%\"><img src=\"";
-        // line 29
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("img/panier.png"), "html", null, true);
-        echo "\" alt=\"\" style=\"height: 25px; width: 25px\"> \$0.00 (0 items)</a>
-    
-    </div>
-        
+        echo "    
     ";
     }
 
-    // line 37
+    // line 36
     public function block_share($context, array $blocks = array())
     {
-        // line 38
+        // line 37
         echo "    
     <nav class=\"social\" id=\"headerShareLinksHover\">
       <a href=\"#\" class=\"share-link\"></a>
@@ -211,18 +215,18 @@ class __TwigTemplate_a79f1fa5322725204cb18c106c046101ffaea0f21043a051041d4378592
     ";
     }
 
-    // line 74
+    // line 73
     public function block_menu($context, array $blocks = array())
     {
-        // line 75
+        // line 74
         echo "      
       ";
     }
 
-    // line 78
+    // line 77
     public function block_recherche($context, array $blocks = array())
     {
-        // line 79
+        // line 78
         echo "          
       <div class=\"search\">
         <a href=\"#\" class=\"search-link\"></a>
@@ -237,26 +241,26 @@ class __TwigTemplate_a79f1fa5322725204cb18c106c046101ffaea0f21043a051041d4378592
       ";
     }
 
-    // line 98
+    // line 97
     public function block_slide($context, array $blocks = array())
     {
-        // line 99
+        // line 98
         echo "        
     ";
     }
 
-    // line 104
+    // line 103
     public function block_body($context, array $blocks = array())
     {
-        // line 105
+        // line 104
         echo "           
     ";
     }
 
-    // line 112
+    // line 111
     public function block_footer($context, array $blocks = array())
     {
-        // line 113
+        // line 112
         echo "<footer id=\"footer\">
   <div class=\"container\">
     <div class=\"contact-phone\">Call Us Today.: <a href=\"tel:555.785.8965\"><strong>555. 785.8965</strong></a></div>
@@ -288,6 +292,6 @@ class __TwigTemplate_a79f1fa5322725204cb18c106c046101ffaea0f21043a051041d4378592
 
     public function getDebugInfo()
     {
-        return array (  260 => 113,  257 => 112,  252 => 105,  249 => 104,  244 => 99,  241 => 98,  226 => 79,  223 => 78,  218 => 75,  215 => 74,  189 => 38,  186 => 37,  177 => 29,  173 => 28,  169 => 27,  163 => 23,  160 => 22,  154 => 10,  144 => 137,  140 => 136,  136 => 135,  132 => 134,  128 => 133,  123 => 130,  121 => 112,  114 => 107,  112 => 104,  106 => 100,  104 => 98,  95 => 91,  93 => 78,  90 => 77,  88 => 74,  73 => 61,  71 => 37,  66 => 34,  64 => 22,  56 => 17,  49 => 13,  45 => 12,  41 => 11,  37 => 10,  27 => 2,);
+        return array (  264 => 112,  261 => 111,  256 => 104,  253 => 103,  248 => 98,  245 => 97,  230 => 78,  227 => 77,  222 => 74,  219 => 73,  193 => 37,  190 => 36,  185 => 28,  182 => 27,  176 => 10,  166 => 138,  162 => 137,  158 => 136,  154 => 135,  150 => 134,  146 => 133,  142 => 132,  137 => 129,  135 => 111,  128 => 106,  126 => 103,  120 => 99,  118 => 97,  109 => 90,  107 => 77,  104 => 76,  102 => 73,  87 => 60,  85 => 36,  77 => 31,  74 => 30,  72 => 27,  61 => 19,  53 => 14,  49 => 13,  45 => 12,  41 => 11,  37 => 10,  27 => 2,);
     }
 }

@@ -18,13 +18,13 @@ pi_sweet4u_contact:
     path:     /contact
     defaults: { _controller: PISweet4uBundle:Sweet4u:contact }
     
-pi_sweet4u_Authentification:
-    path:     /contact
-    defaults: { _controller: PISweet4uBundle:Sweet4u:autentif }
-    
-pi_sweet4u_CréeCompte:
-    path:     /contact
-    defaults: { _controller: PISweet4uBundle:Sweet4u:cree }
+#pi_sweet4u_Authentification:
+#    path:     /contact
+#    defaults: { _controller: PISweet4uBundle:Sweet4u:autentif }
+#    
+#pi_sweet4u_CréeCompte:
+#    path:     /contact
+#    defaults: { _controller: PISweet4uBundle:Sweet4u:cree }
     
 pi_sweet4u_ListePatisserie:
     path:     /liste-patisserie
