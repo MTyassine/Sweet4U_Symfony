@@ -36,13 +36,25 @@ class __TwigTemplate_a79f1fa5322725204cb18c106c046101ffaea0f21043a051041d4378592
         // line 10
         $this->displayBlock('title', $context, $blocks);
         echo "</title>
-  <link rel=\"shortcut icon\" href=\"img/favicon.png\" type=\"image/png\">
-  <link href=\"fonts/fonts.css\" rel=\"stylesheet\" type=\"text/css\">
-  <link href=\"css/style.css\" rel=\"stylesheet\" type=\"text/css\">
+  <link rel=\"shortcut icon\" href=\"";
+        // line 11
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("img/favicon.png"), "html", null, true);
+        echo "\" type=\"image/png\">
+  <link href=\"";
+        // line 12
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("fonts/fonts.css"), "html", null, true);
+        echo "\" rel=\"stylesheet\" type=\"text/css\">
+  <link href=\"";
+        // line 13
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("css/style.css"), "html", null, true);
+        echo "\" rel=\"stylesheet\" type=\"text/css\">
 </head>
 <body>
 <div id=\"loader\">
-    <img src=\"img/loader.gif\" alt=\"loader\">
+    <img src=\"";
+        // line 17
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("img/loader.gif"), "html", null, true);
+        echo "\" alt=\"loader\">
 </div>
 
 <header id=\"header\" class=\"hdTwo\">
@@ -111,11 +123,26 @@ class __TwigTemplate_a79f1fa5322725204cb18c106c046101ffaea0f21043a051041d4378592
         echo "
 <script src=\"https://maps.googleapis.com/maps/api/js\"></script>
 <script src=\"//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js\"></script>
-<script src=\"js/jquery-2.1.3.min.js\"></script>
-<script src=\"js/skrollr.min.js\"></script>
-<script src=\"js/idangerous.swiper.min.js\"></script>
-<script src=\"js/jquery.circliful.min.js\"></script>
-<script src=\"js/main.js\"></script>
+<script src=\"";
+        // line 133
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/jquery-2.1.3.min.js"), "html", null, true);
+        echo "\"></script>
+<script src=\"";
+        // line 134
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/skrollr.min.js"), "html", null, true);
+        echo "\"></script>
+<script src=\"";
+        // line 135
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/idangerous.swiper.min.js"), "html", null, true);
+        echo "\"></script>
+<script src=\"";
+        // line 136
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/jquery.circliful.min.js"), "html", null, true);
+        echo "\"></script>
+<script src=\"";
+        // line 137
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/main.js"), "html", null, true);
+        echo "\"></script>
 </body>
 
 <!-- Mirrored from moonart.net.ua/htmlcut/cakes/invisio_cakes/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 Nov 2015 17:08:39 GMT -->
@@ -137,9 +164,18 @@ class __TwigTemplate_a79f1fa5322725204cb18c106c046101ffaea0f21043a051041d4378592
     <div class=\"header-top-in\" style=\"margin-left: 20%; margin-bottom: 1%\">
 
     
-    <a href=\"#\" ><img src=\"img/login.png\" alt=\"\" style=\"height: 25px; width: 25px\"> Login</a>
-    <a href=\"#\" style=\"margin-left: 2%\"><img src=\"img/compte.png\" alt=\"\" style=\"height: 25px; width: 25px\"> Create an Account</a>
-    <a href=\"#\" style=\"margin-left: 40%\"><img src=\"img/panier.png\" alt=\"\" style=\"height: 25px; width: 25px\"> \$0.00 (0 items)</a>
+    <a href=\"#\" ><img src=\"";
+        // line 27
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("img/login.png"), "html", null, true);
+        echo "\" alt=\"\" style=\"height: 25px; width: 25px;\"> Login</a>
+    <a href=\"#\" style=\"margin-left: 2%\"><img src=\"";
+        // line 28
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("img/compte.png"), "html", null, true);
+        echo "\" alt=\"\" style=\"height: 25px; width: 25px\"> Create an Account</a>
+    <a href=\"#\" style=\"margin-left: 40%\"><img src=\"";
+        // line 29
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("img/panier.png"), "html", null, true);
+        echo "\" alt=\"\" style=\"height: 25px; width: 25px\"> \$0.00 (0 items)</a>
     
     </div>
         
@@ -245,8 +281,13 @@ class __TwigTemplate_a79f1fa5322725204cb18c106c046101ffaea0f21043a051041d4378592
         return "::layout.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  224 => 113,  221 => 112,  216 => 105,  213 => 104,  208 => 99,  205 => 98,  190 => 79,  187 => 78,  182 => 75,  179 => 74,  153 => 38,  150 => 37,  136 => 23,  133 => 22,  127 => 10,  111 => 130,  109 => 112,  102 => 107,  100 => 104,  94 => 100,  92 => 98,  83 => 91,  81 => 78,  78 => 77,  76 => 74,  61 => 61,  59 => 37,  54 => 34,  52 => 22,  37 => 10,  27 => 2,);
+        return array (  260 => 113,  257 => 112,  252 => 105,  249 => 104,  244 => 99,  241 => 98,  226 => 79,  223 => 78,  218 => 75,  215 => 74,  189 => 38,  186 => 37,  177 => 29,  173 => 28,  169 => 27,  163 => 23,  160 => 22,  154 => 10,  144 => 137,  140 => 136,  136 => 135,  132 => 134,  128 => 133,  123 => 130,  121 => 112,  114 => 107,  112 => 104,  106 => 100,  104 => 98,  95 => 91,  93 => 78,  90 => 77,  88 => 74,  73 => 61,  71 => 37,  66 => 34,  64 => 22,  56 => 17,  49 => 13,  45 => 12,  41 => 11,  37 => 10,  27 => 2,);
     }
 }

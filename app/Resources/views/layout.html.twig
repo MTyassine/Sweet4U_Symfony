@@ -8,13 +8,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, initial-scale=1.0, user-scalable=no">
   <title>{% block title %}Sweet4U{% endblock %}</title>
-  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
-  <link href="fonts/fonts.css" rel="stylesheet" type="text/css">
-  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="{{ asset ('img/favicon.png')}}" type="image/png">
+  <link href="{{ asset ('fonts/fonts.css')}}" rel="stylesheet" type="text/css">
+  <link href="{{ asset ('css/style.css')}}" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div id="loader">
-    <img src="img/loader.gif" alt="loader">
+    <img src="{{ asset ('img/loader.gif')}}" alt="loader">
 </div>
 
 <header id="header" class="hdTwo">
@@ -24,9 +24,9 @@
     <div class="header-top-in" style="margin-left: 20%; margin-bottom: 1%">
 
     
-    <a href="#" ><img src="img/login.png" alt="" style="height: 25px; width: 25px"> Login</a>
-    <a href="#" style="margin-left: 2%"><img src="img/compte.png" alt="" style="height: 25px; width: 25px"> Create an Account</a>
-    <a href="#" style="margin-left: 40%"><img src="img/panier.png" alt="" style="height: 25px; width: 25px"> $0.00 (0 items)</a>
+    <a href="#" ><img src="{{ asset ('img/login.png') }}" alt="" style="height: 25px; width: 25px;"> Login</a>
+    <a href="#" style="margin-left: 2%"><img src="{{ asset ('img/compte.png')}}" alt="" style="height: 25px; width: 25px"> Create an Account</a>
+    <a href="#" style="margin-left: 40%"><img src="{{ asset ('img/panier.png')}}" alt="" style="height: 25px; width: 25px"> $0.00 (0 items)</a>
     
     </div>
         
@@ -130,11 +130,11 @@
 
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="js/jquery-2.1.3.min.js"></script>
-<script src="js/skrollr.min.js"></script>
-<script src="js/idangerous.swiper.min.js"></script>
-<script src="js/jquery.circliful.min.js"></script>
-<script src="js/main.js"></script>
+<script src="{{ asset ('js/jquery-2.1.3.min.js')}}"></script>
+<script src="{{ asset ('js/skrollr.min.js')}}"></script>
+<script src="{{ asset ('js/idangerous.swiper.min.js')}}"></script>
+<script src="{{ asset ('js/jquery.circliful.min.js')}}"></script>
+<script src="{{ asset ('js/main.js')}}"></script>
 </body>
 
 <!-- Mirrored from moonart.net.ua/htmlcut/cakes/invisio_cakes/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 Nov 2015 17:08:39 GMT -->

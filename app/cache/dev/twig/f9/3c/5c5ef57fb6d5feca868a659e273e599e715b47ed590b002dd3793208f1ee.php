@@ -21,7 +21,10 @@ class __TwigTemplate_f93c5c5ef57fb6d5feca868a659e273e599e715b47ed590b002dd379320
         <div class=\"swiper-container\">
           <div class=\"swiper-wrapper\">
             <div class=\"swiper-slide\">
-              <div class=\"bg bg-bg\" style=\"background-image: url(temp/home_banner_1.jpg);\"></div>
+              <div class=\"bg bg-bg\" style=\"background-image: url(";
+        // line 6
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("temp/home_banner_1.jpg"), "html", null, true);
+        echo ");\"></div>
               <div class=\"container\">
                 <div class=\"top_bottom\">
                   <div class=\"table\">
@@ -35,7 +38,10 @@ class __TwigTemplate_f93c5c5ef57fb6d5feca868a659e273e599e715b47ed590b002dd379320
               </div>
             </div>
             <div class=\"swiper-slide\">
-              <div class=\"bg bg-bg\" style=\"background-image: url(temp/home_banner_2.jpg);\"></div>
+              <div class=\"bg bg-bg\" style=\"background-image: url(";
+        // line 20
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("temp/home_banner_2.jpg"), "html", null, true);
+        echo ");\"></div>
               <div class=\"container\">
                 <div class=\"top_bottom\">
                   <div class=\"table\">
@@ -49,7 +55,10 @@ class __TwigTemplate_f93c5c5ef57fb6d5feca868a659e273e599e715b47ed590b002dd379320
               </div>
             </div>
             <div class=\"swiper-slide\">
-              <div class=\"bg bg-bg\" style=\"background-image: url(temp/home_banner_3.jpg);\"></div>
+              <div class=\"bg bg-bg\" style=\"background-image: url(";
+        // line 34
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("temp/home_banner_3.jpg"), "html", null, true);
+        echo ");\"></div>
               <div class=\"container\">
                 <div class=\"top_bottom\">
                   <div class=\"table\">
@@ -75,8 +84,13 @@ class __TwigTemplate_f93c5c5ef57fb6d5feca868a659e273e599e715b47ed590b002dd379320
         return "PISweet4uBundle:Template:slide.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  19 => 1,);
+        return array (  60 => 34,  43 => 20,  26 => 6,  19 => 1,);
     }
 }
