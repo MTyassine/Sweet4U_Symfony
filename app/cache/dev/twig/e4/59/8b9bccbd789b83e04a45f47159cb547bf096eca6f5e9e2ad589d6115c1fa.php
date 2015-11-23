@@ -38,6 +38,7 @@ class __TwigTemplate_e4598b9bccbd789b83e04a45f47159cb547bf096eca6f5e9e2ad589d611
     {
         // line 4
         echo "    <h1>List Articles</h1>
+    <section class=\"products-content container\">
     <div class=\"page-title\">
       <h1>Our <b>Products</b></h1>
           <div class=\"drop\">
@@ -52,20 +53,23 @@ class __TwigTemplate_e4598b9bccbd789b83e04a45f47159cb547bf096eca6f5e9e2ad589d611
                         </span>
           </div>
     </div>
-    
     <div class=\"content product-animation\">
-        <ul class=\"items loaded-content container-mix\">
-    
-    ";
+      <ul class=\"items loaded-content container-mix\">
+        
+        ";
         // line 23
         $this->displayBlock('article', $context, $blocks);
-        // line 36
-        echo "    
-        </ul>
+        // line 26
+        echo "          
+          
+      </ul>
       <div class=\"clr\"></div>
       <a href=\"#\" id=\"itemLoad\" class=\"show-more-items ico arrow-down large\">
       <span class=\"rounded-ico large\"></span></a>
     </div>
+  </section>     
+    
+
 ";
     }
 
@@ -73,18 +77,10 @@ class __TwigTemplate_e4598b9bccbd789b83e04a45f47159cb547bf096eca6f5e9e2ad589d611
     public function block_article($context, array $blocks = array())
     {
         // line 24
-        echo "        
-        <li class=\"product mix cakes scale-text\">
-          <div class=\"\">
-          <a href=\"product_detail.html\">
-            <img src=\"temp/products_item_1.jpg\" alt=\"\">
-          </a>
-          <h4 class=\"name\"><a href=\"product_detail.html\">Aliquam dolor tortor</a></h4>
-          <div class=\"description\">Suspendisse potenti. Etiam non euismod augue. Nam aliquam sit amet tortor sit amet consectetur.</div>
-          <strong class=\"price\">\$3.99</strong>
-          </div>
-    </li>
-    ";
+        echo "            ";
+        echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('http_kernel')->controller("PISweet4uBundle:Client:ModelArticle"));
+        echo "
+        ";
     }
 
     public function getTemplateName()
@@ -99,6 +95,6 @@ class __TwigTemplate_e4598b9bccbd789b83e04a45f47159cb547bf096eca6f5e9e2ad589d611
 
     public function getDebugInfo()
     {
-        return array (  76 => 24,  73 => 23,  63 => 36,  61 => 23,  40 => 4,  37 => 3,  11 => 1,);
+        return array (  80 => 24,  77 => 23,  63 => 26,  61 => 23,  40 => 4,  37 => 3,  11 => 1,);
     }
 }
