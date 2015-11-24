@@ -53,4 +53,45 @@ class Article
     private $idCatalogue;
 
 
+    function getId() {
+        return $this->id;
+    }
+
+    function getNom() {
+        return $this->nom;
+    }
+
+    function getPrix() {
+        return $this->prix;
+    }
+
+    function getPrixPromo() {
+        return $this->prixPromo;
+    }
+
+    function getIdCatalogue() {
+        return $this->idCatalogue;
+    }
+
+    function setId($id) {
+        $this->id = $id;
+    }
+
+    function setNom($nom) {
+        $this->nom = $nom;
+    }
+
+    function setPrix($prix) {
+        $this->prix = $prix;
+    }
+
+    function setPrixPromo($prixPromo) {
+        $this->prixPromo = $prixPromo;
+    }
+
+    function setIdCatalogue(\PI\Sweet4uBundle\Entity\Catalogue $idCatalogue) {
+        $this->idCatalogue = $idCatalogue;
+    }
+
+
 }

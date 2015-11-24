@@ -38,5 +38,30 @@ class ResponsablePatissier
      */
     private $idP;
 
+    function getId() {
+        return $this->id;
+    }
+
+    function getPatisserie() {
+        return $this->patisserie;
+    }
+
+    function getIdP() {
+        return $this->idP;
+    }
+
+    function setId($id) {
+        $this->id = $id;
+    }
+
+    function setPatisserie($patisserie) {
+        $this->patisserie = $patisserie;
+    }
+
+    function setIdP(\PI\Sweet4uBundle\Entity\Personne $idP) {
+        $this->idP = $idP;
+    }
+
+
 
 }

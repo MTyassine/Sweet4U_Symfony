@@ -66,5 +66,62 @@ class Patisserie
      */
     private $idRp;
 
+    function getId() {
+        return $this->id;
+    }
+
+    function getDelegation() {
+        return $this->delegation;
+    }
+
+    function getAdresse() {
+        return $this->adresse;
+    }
+
+    function getCodePostal() {
+        return $this->codePostal;
+    }
+
+    function getX() {
+        return $this->x;
+    }
+
+    function getY() {
+        return $this->y;
+    }
+
+    function getIdRp() {
+        return $this->idRp;
+    }
+
+    function setId($id) {
+        $this->id = $id;
+    }
+
+    function setDelegation($delegation) {
+        $this->delegation = $delegation;
+    }
+
+    function setAdresse($adresse) {
+        $this->adresse = $adresse;
+    }
+
+    function setCodePostal($codePostal) {
+        $this->codePostal = $codePostal;
+    }
+
+    function setX($x) {
+        $this->x = $x;
+    }
+
+    function setY($y) {
+        $this->y = $y;
+    }
+
+    function setIdRp(\PI\Sweet4uBundle\Entity\ResponsablePatissier $idRp) {
+        $this->idRp = $idRp;
+    }
+
+
 
 }

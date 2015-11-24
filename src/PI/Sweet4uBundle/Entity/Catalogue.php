@@ -45,5 +45,38 @@ class Catalogue
      */
     private $idRp;
 
+    function getId() {
+        return $this->id;
+    }
+
+    function getNom() {
+        return $this->nom;
+    }
+
+    function getPic() {
+        return $this->pic;
+    }
+
+    function getIdRp() {
+        return $this->idRp;
+    }
+
+    function setId($id) {
+        $this->id = $id;
+    }
+
+    function setNom($nom) {
+        $this->nom = $nom;
+    }
+
+    function setPic($pic) {
+        $this->pic = $pic;
+    }
+
+    function setIdRp(\PI\Sweet4uBundle\Entity\ResponsablePatissier $idRp) {
+        $this->idRp = $idRp;
+    }
+
+
 
 }

@@ -46,4 +46,37 @@ class Unecommande
     private $idCommande;
 
 
+    function getId() {
+        return $this->id;
+    }
+
+    function getIdArticle() {
+        return $this->idArticle;
+    }
+
+    function getQuantite() {
+        return $this->quantite;
+    }
+
+    function getIdCommande() {
+        return $this->idCommande;
+    }
+
+    function setId($id) {
+        $this->id = $id;
+    }
+
+    function setIdArticle($idArticle) {
+        $this->idArticle = $idArticle;
+    }
+
+    function setQuantite($quantite) {
+        $this->quantite = $quantite;
+    }
+
+    function setIdCommande(\PI\Sweet4uBundle\Entity\Commande $idCommande) {
+        $this->idCommande = $idCommande;
+    }
+
+
 }

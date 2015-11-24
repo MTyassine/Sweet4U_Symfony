@@ -32,4 +32,21 @@ class Client
     private $idP;
 
 
+    function getId() {
+        return $this->id;
+    }
+
+    function getIdP() {
+        return $this->idP;
+    }
+
+    function setId($id) {
+        $this->id = $id;
+    }
+
+    function setIdP(\PI\Sweet4uBundle\Entity\Personne $idP) {
+        $this->idP = $idP;
+    }
+
+
 }

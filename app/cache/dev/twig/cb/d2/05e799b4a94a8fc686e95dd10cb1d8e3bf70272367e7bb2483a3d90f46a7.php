@@ -21,19 +21,34 @@ class __TwigTemplate_cbd205e799b4a94a8fc686e95dd10cb1d8e3bf70272367e7bb2483a3d90
 
     <li class=\"\">
         <div class=\"\">
+            
           <a href=\"#\">
             <img src=\"";
-        // line 7
+        // line 8
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("temp/products_item_1.jpg"), "html", null, true);
         echo "\" alt=\"\">
           </a>
           <h4 class=\"name\"><a href=\"#\">Aliquam dolor tortor</a></h4>
           <div class=\"description\">Suspendisse potenti. Etiam non euismod augue. Nam aliquam sit amet tortor sit amet consectetur.</div>
           <strong class=\"price\">\$3.99 
-              <a href=\"#openModal\" style=\"margin-left: 10%\"><img src=\"";
-        // line 12
+              
+              <!-- ------------------ fonction ajouter au pagner --------------------------------- -->
+              
+              <a href=\"#ajouterPagner\" style=\"margin-left: 10%\"><img src=\"";
+        // line 16
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("img/ajouter au pagner.png"), "html", null, true);
         echo "\" alt=\"\" style=\"height: 50px; width: 50px\"> </a>
+              
+              <div id=\"ajouterPagner\" class=\"modalDialog\">
+                <div>
+                        <a href=\"#close\" title=\"Close\" class=\"close\">X</a>
+                        <h2>ajoyter au pagner</h2>
+                        <p>veuiller sesir la contité</p>
+                        <p>merci</p>
+                </div>
+              </div>
+                <!-- ----------------------------------------------------------------------------- -->
+              
           </strong>
         </div>
     </li>
@@ -52,6 +67,6 @@ class __TwigTemplate_cbd205e799b4a94a8fc686e95dd10cb1d8e3bf70272367e7bb2483a3d90
 
     public function getDebugInfo()
     {
-        return array (  35 => 12,  27 => 7,  19 => 1,);
+        return array (  39 => 16,  28 => 8,  19 => 1,);
     }
 }

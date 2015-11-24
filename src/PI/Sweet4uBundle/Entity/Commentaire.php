@@ -69,5 +69,61 @@ class Commentaire
      */
     private $idP;
 
+    function getId() {
+        return $this->id;
+    }
+
+    function getDate() {
+        return $this->date;
+    }
+
+    function getCommentaire() {
+        return $this->commentaire;
+    }
+
+    function getSignalement() {
+        return $this->signalement;
+    }
+
+    function getVisible() {
+        return $this->visible;
+    }
+
+    function getIdArticle() {
+        return $this->idArticle;
+    }
+
+    function getIdP() {
+        return $this->idP;
+    }
+
+    function setId($id) {
+        $this->id = $id;
+    }
+
+    function setDate(\DateTime $date) {
+        $this->date = $date;
+    }
+
+    function setCommentaire($commentaire) {
+        $this->commentaire = $commentaire;
+    }
+
+    function setSignalement($signalement) {
+        $this->signalement = $signalement;
+    }
+
+    function setVisible($visible) {
+        $this->visible = $visible;
+    }
+
+    function setIdArticle(\PI\Sweet4uBundle\Entity\Article $idArticle) {
+        $this->idArticle = $idArticle;
+    }
+
+    function setIdP(\PI\Sweet4uBundle\Entity\Personne $idP) {
+        $this->idP = $idP;
+    }
+
 
 }

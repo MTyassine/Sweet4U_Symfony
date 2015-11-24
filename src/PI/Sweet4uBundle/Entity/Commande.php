@@ -84,4 +84,77 @@ class Commande
     private $idC;
 
 
+    function getId() {
+        return $this->id;
+    }
+
+    function getPayement() {
+        return $this->payement;
+    }
+
+    function getValidation() {
+        return $this->validation;
+    }
+
+    function getModeP() {
+        return $this->modeP;
+    }
+
+    function getModeL() {
+        return $this->modeL;
+    }
+
+    function getArticles() {
+        return $this->articles;
+    }
+
+    function getPrixTotal() {
+        return $this->prixTotal;
+    }
+
+    function getIdRp() {
+        return $this->idRp;
+    }
+
+    function getIdC() {
+        return $this->idC;
+    }
+
+    function setId($id) {
+        $this->id = $id;
+    }
+
+    function setPayement($payement) {
+        $this->payement = $payement;
+    }
+
+    function setValidation($validation) {
+        $this->validation = $validation;
+    }
+
+    function setModeP($modeP) {
+        $this->modeP = $modeP;
+    }
+
+    function setModeL($modeL) {
+        $this->modeL = $modeL;
+    }
+
+    function setArticles($articles) {
+        $this->articles = $articles;
+    }
+
+    function setPrixTotal($prixTotal) {
+        $this->prixTotal = $prixTotal;
+    }
+
+    function setIdRp(\PI\Sweet4uBundle\Entity\ResponsablePatissier $idRp) {
+        $this->idRp = $idRp;
+    }
+
+    function setIdC(\PI\Sweet4uBundle\Entity\Client $idC) {
+        $this->idC = $idC;
+    }
+
+
 }
