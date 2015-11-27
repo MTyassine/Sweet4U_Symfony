@@ -1,0 +1,39 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+{{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
+<table>
+    <tr>
+        <td>Nom :</td>
+        <td>{{ form_widget(form.nom) }}</td>
+    </tr>
+    <tr>
+        <td>Prenom :</td>
+        <td>{{ form_widget(form.prenom) }}</td>
+    </tr>
+    <tr>
+        <td>Mail :</td>
+        <td>{{ form_widget(form.mail) }}</td>
+    </tr>
+    <tr>
+        <td>Adresse :</td>
+        <td>{{ form_widget(form.adresse) }}</td>
+    </tr>
+   
+    <tr>
+        <td>cin :</td>
+        <td>{{ form_widget(form.cin) }}</td>
+    </tr>
+   
+    <tr>
+        <td>Nom Patisserie :</td>
+        <td>{{ form_widget(form.nompatisserie) }}</td>
+    </tr>
+    <tr>
+        <td>En tant que :</td>
+        <td>{{ form_widget(form.roles) }}</td>
+    </tr>
+    </table><br>
+    <div>
+        <input type="submit" value="{{ 'registration.submit'|trans }}" />
+    </div>
+{{form_end(form) }}

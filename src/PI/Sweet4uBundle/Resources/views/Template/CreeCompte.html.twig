@@ -1,15 +1,30 @@
 
+<link rel="stylesheet" type="text/css" href="{{ asset('css/inscription.css')}}" />
 
 <a href="#openModal" style="margin-left: 2%"><img src="{{ asset ('img/compte.png')}}" alt="" style="height: 25px; width: 25px"> Create an Account</a>
 
 
 <div id="openModal" class="modalDialog">
-	<div>
-		<a href="#close" title="Close" class="close">X</a>
-		<h2>Modal Box</h2>
-		<p>This is a sample modal box that can be created using the powers of CSS3.</p>
-		<p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
-	</div>
+   
+     <a href="#close" title="Close" class="close">X</a>
+        <div id="container_demo" >
+            <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
+            <a class="hiddenanchor" id="toregister"></a>
+            <a class="hiddenanchor" id="tologin"></a>
+            <div id="wrapper">
+
+
+                <div id="register" class="animate form">
+                    <form  action="mysuperscript.php" autocomplete="on"> 
+                        <h1> Formulaire inscription </h1> 
+                        <input type="text"/>
+                       
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    
 </div>
 
 

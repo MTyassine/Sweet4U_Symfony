@@ -5,7 +5,7 @@ imports:
 
 framework:
     #esi:             ~
-    #translator:      { fallbacks: ["%locale%"] }
+    translator:       ~   
     secret:          "%secret%"
     router:
         resource: "%kernel.root_dir%/config/routing.yml"
@@ -71,3 +71,12 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+#fos userBundle
+
+fos_user:
+    db_driver: orm 
+    firewall_name: main
+    user_class: PI\userBundle\Entity\User
+    registration:
+        form:
+            type: app_user_registration    
