@@ -47,69 +47,20 @@ class Reclamation
      *
      * @ORM\ManyToOne(targetEntity="PI\Sweet4uBundle\Entity\Personne")
      * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="id_to", referencedColumnName="id")
+     *   @ORM\JoinColumn(name="id_from", referencedColumnName="id")
      * })
      */
-    private $idTo;
+    private $idFrom;
 
     /**
      * @var \PI\Sweet4uBundle\Entity\Personne
      *
      * @ORM\ManyToOne(targetEntity="PI\Sweet4uBundle\Entity\Personne")
      * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="id_from", referencedColumnName="id")
+     *   @ORM\JoinColumn(name="id_to", referencedColumnName="id")
      * })
      */
-    private $idFrom;
-
-
-    function getId() {
-        return $this->id;
-    }
-
-    function getSujet() {
-        return $this->sujet;
-    }
-
-    function getContenu() {
-        return $this->contenu;
-    }
-
-    function getLu() {
-        return $this->lu;
-    }
-
-    function getIdTo() {
-        return $this->idTo;
-    }
-
-    function getIdFrom() {
-        return $this->idFrom;
-    }
-
-    function setId($id) {
-        $this->id = $id;
-    }
-
-    function setSujet($sujet) {
-        $this->sujet = $sujet;
-    }
-
-    function setContenu($contenu) {
-        $this->contenu = $contenu;
-    }
-
-    function setLu($lu) {
-        $this->lu = $lu;
-    }
-
-    function setIdTo(\PI\Sweet4uBundle\Entity\Personne $idTo) {
-        $this->idTo = $idTo;
-    }
-
-    function setIdFrom(\PI\Sweet4uBundle\Entity\Personne $idFrom) {
-        $this->idFrom = $idFrom;
-    }
+    private $idTo;
 
 
 }

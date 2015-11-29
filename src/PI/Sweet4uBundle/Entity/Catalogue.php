@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Catalogue
  *
- * @ORM\Table(name="catalogue", indexes={@ORM\Index(name="id_rp", columns={"id_rp"})})
+ * @ORM\Table(name="catalogue", indexes={@ORM\Index(name="id_rp", columns={"id_art"})})
  * @ORM\Entity
  */
 class Catalogue
@@ -36,47 +36,14 @@ class Catalogue
     private $pic;
 
     /**
-     * @var \PI\Sweet4uBundle\Entity\ResponsablePatissier
+     * @var \PI\Sweet4uBundle\Entity\Article
      *
-     * @ORM\ManyToOne(targetEntity="PI\Sweet4uBundle\Entity\ResponsablePatissier")
+     * @ORM\ManyToOne(targetEntity="PI\Sweet4uBundle\Entity\Article")
      * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="id_rp", referencedColumnName="id")
+     *   @ORM\JoinColumn(name="id_art", referencedColumnName="id")
      * })
      */
-    private $idRp;
-
-    function getId() {
-        return $this->id;
-    }
-
-    function getNom() {
-        return $this->nom;
-    }
-
-    function getPic() {
-        return $this->pic;
-    }
-
-    function getIdRp() {
-        return $this->idRp;
-    }
-
-    function setId($id) {
-        $this->id = $id;
-    }
-
-    function setNom($nom) {
-        $this->nom = $nom;
-    }
-
-    function setPic($pic) {
-        $this->pic = $pic;
-    }
-
-    function setIdRp(\PI\Sweet4uBundle\Entity\ResponsablePatissier $idRp) {
-        $this->idRp = $idRp;
-    }
-
+    private $idArt;
 
 
 }

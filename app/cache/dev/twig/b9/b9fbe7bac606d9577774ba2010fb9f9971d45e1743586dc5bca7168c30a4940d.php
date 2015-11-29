@@ -7,51 +7,26 @@ class __TwigTemplate_d7a8aa7ec4ed5a68bf6e0e64a1b7b488d48e9794d7c1c2cfcf4fd01f000
     {
         parent::__construct($env);
 
-        $this->parent = false;
-
+        // line 2
+        $this->parent = $this->loadTemplate("FOSUserBundle::layout.html.twig", "PISweet4uBundle:Template:Authentification.html.twig", 2);
         $this->blocks = array(
+            'fos_user_content' => array($this, 'block_fos_user_content'),
         );
+    }
+
+    protected function doGetParent(array $context)
+    {
+        return "FOSUserBundle::layout.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        // line 1
-        echo "
-<link rel=\"stylesheet\" type=\"text/css\" href=\"";
-        // line 2
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("css/logincss.css"), "html", null, true);
-        echo "\" />
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
+    }
 
-<a href=\"#autentif\" ><img src=\"";
-        // line 4
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("img/login.png"), "html", null, true);
-        echo "\" alt=\"\" style=\"height: 25px; width: 25px;\"> Login</a>
-
-<div id=\"autentif\" class=\"modalDialog\">
-\t<div>
-\t\t<a href=\"#close\" title=\"Close\" class=\"close\">X</a>
-\t\t<div class=\"container\">
-\t<section id=\"content\">
-\t\t
-<form action=\"\" method=\"post\">
-    <h2> authentification </h2>
-
-    <input type=\"text\" id=\"username\" name=\"_username\" placeholder=\"login\"  required=\"required\" /></br>
-
-   
-    <input type=\"password\" id=\"password\" name=\"_password\" placeholder=\"password\" required=\"required\" /></br>
-
-    
-
-    <input type=\"submit\" id=\"_submit\" name=\"_submit\" value=\"se connecter\"  style=\"color: #ffffff\"/>
-</form>
-\t</section><!-- content -->
-</div><!-- container -->
-        </div>
-</div>
-
-
-";
+    // line 3
+    public function block_fos_user_content($context, array $blocks = array())
+    {
     }
 
     public function getTemplateName()
@@ -66,36 +41,11 @@ class __TwigTemplate_d7a8aa7ec4ed5a68bf6e0e64a1b7b488d48e9794d7c1c2cfcf4fd01f000
 
     public function getDebugInfo()
     {
-        return array (  27 => 4,  22 => 2,  19 => 1,);
+        return array (  28 => 3,  11 => 2,);
     }
 }
-/* */
-/* <link rel="stylesheet" type="text/css" href="{{ asset('css/logincss.css')}}" />*/
-/* */
-/* <a href="#autentif" ><img src="{{ asset ('img/login.png') }}" alt="" style="height: 25px; width: 25px;"> Login</a>*/
-/* */
-/* <div id="autentif" class="modalDialog">*/
-/* 	<div>*/
-/* 		<a href="#close" title="Close" class="close">X</a>*/
-/* 		<div class="container">*/
-/* 	<section id="content">*/
-/* 		*/
-/* <form action="" method="post">*/
-/*     <h2> authentification </h2>*/
-/* */
-/*     <input type="text" id="username" name="_username" placeholder="login"  required="required" /></br>*/
-/* */
-/*    */
-/*     <input type="password" id="password" name="_password" placeholder="password" required="required" /></br>*/
-/* */
-/*     */
-/* */
-/*     <input type="submit" id="_submit" name="_submit" value="se connecter"  style="color: #ffffff"/>*/
-/* </form>*/
-/* 	</section><!-- content -->*/
-/* </div><!-- container -->*/
-/*         </div>*/
-/* </div>*/
-/* */
-/* */
+/* {# empty Twig template #}*/
+/* {% extends "FOSUserBundle::layout.html.twig" %}*/
+/* {% block fos_user_content %}*/
+/* {% endblock fos_user_content %}*/
 /* */

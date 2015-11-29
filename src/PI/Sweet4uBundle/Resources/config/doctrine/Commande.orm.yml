@@ -61,15 +61,6 @@ PI\Sweet4uBundle\Entity\Commande:
             comment: ''
             column: prix_total
     manyToOne:
-        idRp:
-            targetEntity: ResponsablePatissier
-            cascade: {  }
-            mappedBy: null
-            inversedBy: null
-            joinColumns:
-                id_rp:
-                    referencedColumnName: id
-            orphanRemoval: false
         idC:
             targetEntity: Client
             cascade: {  }
@@ -77,6 +68,15 @@ PI\Sweet4uBundle\Entity\Commande:
             inversedBy: null
             joinColumns:
                 id_c:
+                    referencedColumnName: id
+            orphanRemoval: false
+        idRp:
+            targetEntity: ResponsablePatissier
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_rp:
                     referencedColumnName: id
             orphanRemoval: false
     lifecycleCallbacks: {  }

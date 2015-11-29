@@ -34,13 +34,6 @@ class Personne
      * @ORM\Column(name="prenom", type="string", length=255, nullable=false)
      */
     private $prenom;
-    
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="mail", type="string", length=255, nullable=false)
-     */
-    private $mail;
 
     /**
      * @var string
@@ -76,79 +69,6 @@ class Personne
      * @ORM\Column(name="pwd", type="string", length=255, nullable=false)
      */
     private $pwd;
-
-
-    function getId() {
-        return $this->id;
-    }
-
-    function getNom() {
-        return $this->nom;
-    }
-
-    function getPrenom() {
-        return $this->prenom;
-    }
-
-    function getMail() {
-        return $this->mail;
-    }
-
-    function getAdresse() {
-        return $this->adresse;
-    }
-
-    function getDateNaissance() {
-        return $this->dateNaissance;
-    }
-
-    function getCin() {
-        return $this->cin;
-    }
-
-    function getLogin() {
-        return $this->login;
-    }
-
-    function getPwd() {
-        return $this->pwd;
-    }
-
-    function setId($id) {
-        $this->id = $id;
-    }
-
-    function setNom($nom) {
-        $this->nom = $nom;
-    }
-
-    function setPrenom($prenom) {
-        $this->prenom = $prenom;
-    }
-
-    function setMail($mail) {
-        $this->mail = $mail;
-    }
-
-    function setAdresse($adresse) {
-        $this->adresse = $adresse;
-    }
-
-    function setDateNaissance(\DateTime $dateNaissance) {
-        $this->dateNaissance = $dateNaissance;
-    }
-
-    function setCin($cin) {
-        $this->cin = $cin;
-    }
-
-    function setLogin($login) {
-        $this->login = $login;
-    }
-
-    function setPwd($pwd) {
-        $this->pwd = $pwd;
-    }
 
 
 }

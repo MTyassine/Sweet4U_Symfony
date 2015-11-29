@@ -39,17 +39,7 @@ PI\Sweet4uBundle\Entity\Reclamation:
             nullable: false
             unsigned: false
             comment: ''
-            default: '0'
     manyToOne:
-        idTo:
-            targetEntity: Personne
-            cascade: {  }
-            mappedBy: null
-            inversedBy: null
-            joinColumns:
-                id_to:
-                    referencedColumnName: id
-            orphanRemoval: false
         idFrom:
             targetEntity: Personne
             cascade: {  }
@@ -57,6 +47,15 @@ PI\Sweet4uBundle\Entity\Reclamation:
             inversedBy: null
             joinColumns:
                 id_from:
+                    referencedColumnName: id
+            orphanRemoval: false
+        idTo:
+            targetEntity: Personne
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_to:
                     referencedColumnName: id
             orphanRemoval: false
     lifecycleCallbacks: {  }

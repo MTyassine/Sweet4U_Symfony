@@ -4,7 +4,7 @@ PI\Sweet4uBundle\Entity\Catalogue:
     indexes:
         id_rp:
             columns:
-                - id_rp
+                - id_art
     id:
         id:
             type: integer
@@ -28,13 +28,13 @@ PI\Sweet4uBundle\Entity\Catalogue:
             fixed: false
             comment: ''
     manyToOne:
-        idRp:
-            targetEntity: ResponsablePatissier
+        idArt:
+            targetEntity: Article
             cascade: {  }
             mappedBy: null
             inversedBy: null
             joinColumns:
-                id_rp:
+                id_art:
                     referencedColumnName: id
             orphanRemoval: false
     lifecycleCallbacks: {  }

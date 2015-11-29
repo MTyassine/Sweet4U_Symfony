@@ -158,25 +158,25 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         // pi_sweet4u_ListePatisserie
         if ($pathinfo === '/liste-patisserie') {
-            return array (  '_controller' => 'PI\\Sweet4uBundle\\Controller\\ClientController::listePatisserieAction',  '_route' => 'pi_sweet4u_ListePatisserie',);
+            return array (  '_controller' => 'PISweet4uBundle:Client:listePatisserie',  '_route' => 'pi_sweet4u_ListePatisserie',);
         }
 
         if (0 === strpos($pathinfo, '/pa')) {
             if (0 === strpos($pathinfo, '/patisserie')) {
                 // pi_sweet4u_ListeCatalogue
                 if ($pathinfo === '/patisserie/liste-catalogue') {
-                    return array (  '_controller' => 'PI\\Sweet4uBundle\\Controller\\ClientController::listeCatalogueAction',  '_route' => 'pi_sweet4u_ListeCatalogue',);
+                    return array (  '_controller' => 'PISweet4uBundle:Client:listeCatalogue',  '_route' => 'pi_sweet4u_ListeCatalogue',);
                 }
 
                 if (0 === strpos($pathinfo, '/patisserie/catalogue')) {
                     // pi_sweet4u_ListeArticle
                     if ($pathinfo === '/patisserie/catalogue/liste-article') {
-                        return array (  '_controller' => 'PI\\Sweet4uBundle\\Controller\\ClientController::listeArticleAction',  '_route' => 'pi_sweet4u_ListeArticle',);
+                        return array (  '_controller' => 'PISweet4uBundle:Client:listeArticle',  '_route' => 'pi_sweet4u_ListeArticle',);
                     }
 
                     // pi_sweet4u_Article
                     if ($pathinfo === '/patisserie/catalogue/article') {
-                        return array (  '_controller' => 'PI\\Sweet4uBundle\\Controller\\ClientController::articleAction',  '_route' => 'pi_sweet4u_Article',);
+                        return array (  '_controller' => 'PISweet4uBundle:Client:article',  '_route' => 'pi_sweet4u_Article',);
                     }
 
                 }
@@ -185,7 +185,7 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
             // pi_sweet4u_Panier
             if ($pathinfo === '/panier') {
-                return array (  '_controller' => 'PI\\Sweet4uBundle\\Controller\\ClientController::panierAction',  '_route' => 'pi_sweet4u_Panier',);
+                return array (  '_controller' => 'PISweet4uBundle:Client:panier',  '_route' => 'pi_sweet4u_Panier',);
             }
 
         }
@@ -193,62 +193,67 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         if (0 === strpos($pathinfo, '/commande')) {
             // pi_sweet4u_ClientCommandes
             if ($pathinfo === '/commandes') {
-                return array (  '_controller' => 'PI\\Sweet4uBundle\\Controller\\ClientController::commandesAction',  '_route' => 'pi_sweet4u_ClientCommandes',);
+                return array (  '_controller' => 'PISweet4uBundle:Client:commandes',  '_route' => 'pi_sweet4u_ClientCommandes',);
             }
 
             // pi_sweet4u_Payement
             if ($pathinfo === '/commande/payement') {
-                return array (  '_controller' => 'PI\\Sweet4uBundle\\Controller\\ClientController::payementAction',  '_route' => 'pi_sweet4u_Payement',);
+                return array (  '_controller' => 'PISweet4uBundle:Client:payement',  '_route' => 'pi_sweet4u_Payement',);
             }
 
         }
 
         // pi_sweet4u_GestionCommentaire
         if ($pathinfo === '/gestion-commentaire') {
-            return array (  '_controller' => 'PI\\Sweet4uBundle\\Controller\\AdminController::GestionCommentaireAction',  '_route' => 'pi_sweet4u_GestionCommentaire',);
+            return array (  '_controller' => 'PISweet4uBundle:Admin:GestionCommentaire',  '_route' => 'pi_sweet4u_GestionCommentaire',);
         }
 
         // pi_sweet4u_BloquerCompte
         if ($pathinfo === '/Block') {
-            return array (  '_controller' => 'PI\\Sweet4uBundle\\Controller\\AdminController::BlockAction',  '_route' => 'pi_sweet4u_BloquerCompte',);
+            return array (  '_controller' => 'PISweet4uBundle:Admin:Block',  '_route' => 'pi_sweet4u_BloquerCompte',);
         }
 
         // pi_sweet4u_ListeAdresse
         if ($pathinfo === '/Liste-Patisserie') {
-            return array (  '_controller' => 'PI\\Sweet4uBundle\\Controller\\ResponsableController::listePatisserieAction',  '_route' => 'pi_sweet4u_ListeAdresse',);
+            return array (  '_controller' => 'PISweet4uBundle:Responsable:listePatisserie',  '_route' => 'pi_sweet4u_ListeAdresse',);
         }
 
         // pi_sweet4u_AjouterPatisserie
         if ($pathinfo === '/ajouter-patisserie') {
-            return array (  '_controller' => 'PI\\Sweet4uBundle\\Controller\\ResponsableController::ajouterPatisserieAction',  '_route' => 'pi_sweet4u_AjouterPatisserie',);
+            return array (  '_controller' => 'PISweet4uBundle:Responsable:ajouterPatisserie',  '_route' => 'pi_sweet4u_AjouterPatisserie',);
         }
 
         // pi_sweet4u_ListeCataloguePatisserie
         if ($pathinfo === '/ListeCatalogue') {
-            return array (  '_controller' => 'PI\\Sweet4uBundle\\Controller\\ResponsableController::cataloguePatisserieAction',  '_route' => 'pi_sweet4u_ListeCataloguePatisserie',);
+            return array (  '_controller' => 'PISweet4uBundle:Responsable:cataloguePatisserie',  '_route' => 'pi_sweet4u_ListeCataloguePatisserie',);
         }
 
         if (0 === strpos($pathinfo, '/a')) {
             // pi_sweet4u_AjouterCatalogue
             if ($pathinfo === '/ajouter-catalogue') {
-                return array (  '_controller' => 'PI\\Sweet4uBundle\\Controller\\ResponsableController::ajouterCatalogueAction',  '_route' => 'pi_sweet4u_AjouterCatalogue',);
+                return array (  '_controller' => 'PISweet4uBundle:Responsable:ajouterCatalogue',  '_route' => 'pi_sweet4u_AjouterCatalogue',);
             }
 
             // pi_sweet4u_ArticleCatalogue
             if ($pathinfo === '/article-catalogue') {
-                return array (  '_controller' => 'PI\\Sweet4uBundle\\Controller\\ResponsableController::articleCatalogueAction',  '_route' => 'pi_sweet4u_ArticleCatalogue',);
+                return array (  '_controller' => 'PISweet4uBundle:Responsable:articleCatalogue',  '_route' => 'pi_sweet4u_ArticleCatalogue',);
             }
 
             // pi_sweet4u_AjouterArticle
             if ($pathinfo === '/ajouter-article') {
-                return array (  '_controller' => 'PI\\Sweet4uBundle\\Controller\\ResponsableController::ajouterArticleAction',  '_route' => 'pi_sweet4u_AjouterArticle',);
+                return array (  '_controller' => 'PISweet4uBundle:Responsable:ajouterArticle',  '_route' => 'pi_sweet4u_AjouterArticle',);
             }
 
-            // homepage
-            if ($pathinfo === '/app/example') {
-                return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::indexAction',  '_route' => 'homepage',);
-            }
+        }
 
+        // pi_sweet4u_AfficherClient
+        if ($pathinfo === '/Profil') {
+            return array (  '_controller' => 'PI\\Sweet4uBundle\\Controller\\Sweet4uController::profilAction',  '_route' => 'pi_sweet4u_AfficherClient',);
+        }
+
+        // homepage
+        if ($pathinfo === '/app/example') {
+            return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::indexAction',  '_route' => 'homepage',);
         }
 
         if (0 === strpos($pathinfo, '/log')) {
@@ -412,6 +417,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'FOS\\UserBundle\\Controller\\ChangePasswordController::changePasswordAction',  '_route' => 'fos_user_change_password',);
         }
         not_fos_user_change_password:
+
+        // PI_Coffret_ajout_Coffret
+        if ($pathinfo === '/ajoutCoffret') {
+            return array (  '_controller' => 'PI\\Sweet4uBundle\\Controller\\CoffretController::ajoutAction',  '_route' => 'PI_Coffret_ajout_Coffret',);
+        }
 
         // _welcome
         if (rtrim($pathinfo, '/') === '') {

@@ -1,0 +1,19 @@
+<h1>Ajout de catégorie </h1> 
+<form action="" method="POST" {{ form_enctype(Form) }}> 
+    {{form_label(Form.nom, "nom: ")}}
+    {{form_widget(Form.nom)}}
+    {{form_label(Form.nom, "nbpieces: ")}}
+    {{form_widget(Form.nbpieces)}} 
+    {{form_label(Form.nom, "prix: ")}}
+    {{form_widget(Form.prix)}} 
+    {{ form_widget(Form) }}
+
+ <input type="submit" value="Upload Document" />
+
+    {{form_label(Form.nom, "stock: ")}}
+    {{form_widget(Form.stock)}} 
+    {{ form_rest(Form) }} 
+    
+    <input type="submit" value="Enregistrer"/>
+
+</form>

@@ -1,10 +1,6 @@
 PI\Sweet4uBundle\Entity\Client:
     type: entity
     table: client
-    indexes:
-        id_p:
-            columns:
-                - id_p
     id:
         id:
             type: integer
@@ -14,14 +10,4 @@ PI\Sweet4uBundle\Entity\Client:
             id: true
             generator:
                 strategy: IDENTITY
-    manyToOne:
-        idP:
-            targetEntity: Personne
-            cascade: {  }
-            mappedBy: null
-            inversedBy: null
-            joinColumns:
-                id_p:
-                    referencedColumnName: id
-            orphanRemoval: false
     lifecycleCallbacks: {  }

@@ -37,25 +37,14 @@ PI\Sweet4uBundle\Entity\Commentaire:
             nullable: false
             unsigned: false
             comment: ''
-            default: '0'
             column: Signalement
         visible:
             type: integer
             nullable: false
             unsigned: false
             comment: ''
-            default: '1'
             column: Visible
     manyToOne:
-        idArticle:
-            targetEntity: Article
-            cascade: {  }
-            mappedBy: null
-            inversedBy: null
-            joinColumns:
-                id_article:
-                    referencedColumnName: id
-            orphanRemoval: false
         idP:
             targetEntity: Personne
             cascade: {  }
@@ -63,6 +52,15 @@ PI\Sweet4uBundle\Entity\Commentaire:
             inversedBy: null
             joinColumns:
                 id_p:
+                    referencedColumnName: id
+            orphanRemoval: false
+        idArticle:
+            targetEntity: Article
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_article:
                     referencedColumnName: id
             orphanRemoval: false
     lifecycleCallbacks: {  }

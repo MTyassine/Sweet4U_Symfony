@@ -56,19 +56,19 @@ class __TwigTemplate_d5401cd281a771e20b8e4f7edb8b0a026968fae0b6f7f307078b3137430
         echo $this->env->getExtension('routing')->getPath("pi_sweet4u_service");
         echo "\">Services</a></li>
           
-          <!--
-          <li class=\"menu-item-has-children close\"><a href=\"#\">Compte</a>
+        
+          <li class=\"menu-item-has-children close\"><a href=\"#\">Coffret</a>
           \t<ul class=\"submenu\">
-            \t<li><a href=\"";
-        // line 29
-        echo $this->env->getExtension('routing')->getPath("pi_sweet4u_Compte");
-        echo "\">Parametre</a></li>
-                <li><a href=\"#\">Commande</a></li>
+            \t<li><a href=\"http://localhost/sweet4u/Sweet4U_Symfony/web/app_dev.php/Profil\">Ajouter Coffret</a></li>
+                <li><a href=\"#\">Afficher Coffret</a></li>
+                <li><a href=\"#\">Modifier Coffret</a></li>
+                <li><a href=\"#\">Supprimer Coffret</a></li>
+                
             </ul>
           </li>
-          -->
+         
           <li><a href=\"";
-        // line 34
+        // line 37
         echo $this->env->getExtension('routing')->getPath("pi_sweet4u_contact");
         echo "\">Contact</a></li>
         </ul>
@@ -88,7 +88,7 @@ class __TwigTemplate_d5401cd281a771e20b8e4f7edb8b0a026968fae0b6f7f307078b3137430
 
     public function getDebugInfo()
     {
-        return array (  72 => 34,  64 => 29,  56 => 24,  43 => 14,  34 => 8,  30 => 7,  26 => 6,  19 => 1,);
+        return array (  72 => 37,  56 => 24,  43 => 14,  34 => 8,  30 => 7,  26 => 6,  19 => 1,);
     }
 }
 /* */
@@ -116,14 +116,17 @@ class __TwigTemplate_d5401cd281a771e20b8e4f7edb8b0a026968fae0b6f7f307078b3137430
 /*         <ul class="right">*/
 /*           <li><a href="{{ path('pi_sweet4u_service') }}">Services</a></li>*/
 /*           */
-/*           <!--*/
-/*           <li class="menu-item-has-children close"><a href="#">Compte</a>*/
+/*         */
+/*           <li class="menu-item-has-children close"><a href="#">Coffret</a>*/
 /*           	<ul class="submenu">*/
-/*             	<li><a href="{{ path('pi_sweet4u_Compte') }}">Parametre</a></li>*/
-/*                 <li><a href="#">Commande</a></li>*/
+/*             	<li><a href="http://localhost/sweet4u/Sweet4U_Symfony/web/app_dev.php/Profil">Ajouter Coffret</a></li>*/
+/*                 <li><a href="#">Afficher Coffret</a></li>*/
+/*                 <li><a href="#">Modifier Coffret</a></li>*/
+/*                 <li><a href="#">Supprimer Coffret</a></li>*/
+/*                 */
 /*             </ul>*/
 /*           </li>*/
-/*           -->*/
+/*          */
 /*           <li><a href="{{ path('pi_sweet4u_contact') }}">Contact</a></li>*/
 /*         </ul>*/
 /*       </nav>*/

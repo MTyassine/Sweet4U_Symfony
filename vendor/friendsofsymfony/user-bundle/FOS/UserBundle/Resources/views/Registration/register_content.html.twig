@@ -1,6 +1,84 @@
-<form action="{{ path('fos_user_registration_register') }}" {{ form_enctype(form) }} method="POST" class="fos_user_registration_register">
-    {{ form_widget(form) }}
-    <div>
-        <input type="submit" value="{{ 'registration.submit'|trans({}, 'FOSUserBundle') }}" />
-    </div>
-</form>
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Signer Register Form Flat Responsive Widget Template | Home :: w3layouts</title>
+        <!-- Custom Theme files -->
+        <link href="{{asset('css/inscri.css')}}" rel="stylesheet" type="text/css" media="all"/>
+        <!-- Custom Theme files -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+        <meta name="keywords" content="Signer Register Form Responsive,Login form web template, Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+        <!--Google Fonts-->
+        <link href="{{asset('//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800')}}" rel='stylesheet' type='text/css'>
+        <!--Google Fonts-->
+    </head>
+    <body>
+        <!--sign up form start here-->
+        
+        <div class="singup">
+            <h3>Inscription</h3>
+            <div class="signup-main">
+                    {% trans_default_domain 'FOSUserBundle' %}
+
+    {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
+ 
+                <table>
+                    
+                   
+                    <tr>
+                        <td>Nom :</td>
+                        <td>{{ form_widget(form.nom) }}</td>
+                    </tr>
+                    <tr>
+                        <td>prenom :</td>
+                        <td>{{ form_widget(form.prenom) }}</td>
+                    </tr>
+                    <tr>
+                        <td>cin :</td>
+                        <td>{{ form_widget(form.cin) }}</td>
+                    </tr>
+                    <tr>
+                        <td>Email :</td>
+                        <td>{{ form_widget(form.email) }}</td>
+                    </tr>
+                    <tr>
+                        <td>Adresse :</td>
+                        <td>{{ form_widget(form.adresse) }}</td>
+                    </tr>
+                     <tr>
+                       <td>login :</td>
+                        <td>{{ form_widget(form.username) }}</td>
+                    </tr>
+                    <tr>
+                        <td>Mot de passe :</td>
+                        <td>{{ form_widget(form.plainPassword.first) }}</td>
+                    </tr>
+                    <tr>
+                        <td>Vérification :</td>
+                        <td>{{ form_widget(form.plainPassword.second) }}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>nompatisserie :</td>
+                        <td>{{ form_widget(form.nompatisserie) }}</td>
+                    </tr>
+                    <tr>
+                        <td>En tant que :</td>
+                        <td><div>{{ form_widget(form.roles) }}</div></td>
+                    </tr>
+
+                </table><br>
+                <div class="send-button">
+                    <input type="submit" value="S'inscrire" onclick="{{ path ("fos_user_profile_show") }}"/>
+                </div>
+                <p>Already have an account?  <a href="/sweet4u/Sweet4U_Symfony/web/app_dev.php/login">Login Here</a></p>
+                {{form_end(form) }}
+            </div>
+        </div>	
+        <div class="copyright">
+            <p>&copy; 2015 Sweet4u </a></p>
+        </div>
+        <!--sign up form end here-->
+    </body>
+</html>

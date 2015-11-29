@@ -1,10 +1,6 @@
 PI\Sweet4uBundle\Entity\ResponsablePatissier:
     type: entity
     table: responsable_patissier
-    indexes:
-        id_p:
-            columns:
-                - id_p
     id:
         id:
             type: integer
@@ -21,14 +17,4 @@ PI\Sweet4uBundle\Entity\ResponsablePatissier:
             length: 255
             fixed: false
             comment: ''
-    manyToOne:
-        idP:
-            targetEntity: Personne
-            cascade: {  }
-            mappedBy: null
-            inversedBy: null
-            joinColumns:
-                id_p:
-                    referencedColumnName: id
-            orphanRemoval: false
     lifecycleCallbacks: {  }

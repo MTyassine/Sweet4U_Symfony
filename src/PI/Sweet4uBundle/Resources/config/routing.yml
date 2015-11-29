@@ -86,3 +86,6 @@ pi_sweet4u_AjouterArticle:
     path:     /ajouter-article
     defaults: { _controller: PISweet4uBundle:Responsable:ajouterArticle }
     
+pi_sweet4u_AfficherClient:
+    path:     /Profil
+    defaults: { _controller: PISweet4uBundle:Sweet4u:profil }    

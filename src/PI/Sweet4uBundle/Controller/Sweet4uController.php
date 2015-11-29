@@ -31,10 +31,7 @@ class Sweet4uController extends Controller
         return $this->render('PISweet4uBundle:Template:slide.html.twig', array());
     }
     
-    public function profilAction()
-    {
-        return $this->render('PISweet4uBundle:Template:Profil.html.twig', array());
-    }
+   
     
     public function aproposAction()
     {
@@ -49,5 +46,8 @@ class Sweet4uController extends Controller
     public function contactAction()
     {
         return $this->render('PISweet4uBundle:Template:Service.html.twig', array());
+    }
+    public function profilAction(){
+        return $this->render('PISweet4uBundle:Client:afficher.html.twig', array());
     }
 }

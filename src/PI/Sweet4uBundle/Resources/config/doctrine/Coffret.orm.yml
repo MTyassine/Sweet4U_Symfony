@@ -1,0 +1,57 @@
+PI\Sweet4uBundle\Entity\Coffret:
+    type: entity
+    table: coffret
+    indexes:
+        id-fos:
+            columns:
+                - id-fos
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        nom:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            comment: ''
+        nbpieces:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: nbPieces
+        prix:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+            comment: ''
+        image:
+            type: blob
+            nullable: false
+            length: null
+            fixed: false
+            comment: ''
+        stock:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+    manyToOne:
+        idFos:
+            targetEntity: FosUser
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id-fos:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

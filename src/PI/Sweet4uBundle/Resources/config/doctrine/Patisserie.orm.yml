@@ -15,6 +15,12 @@ PI\Sweet4uBundle\Entity\Patisserie:
             generator:
                 strategy: IDENTITY
     fields:
+        idRp:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+            column: id_rp
         delegation:
             type: string
             nullable: false
@@ -43,14 +49,4 @@ PI\Sweet4uBundle\Entity\Patisserie:
             nullable: true
             unsigned: false
             comment: ''
-    manyToOne:
-        idRp:
-            targetEntity: ResponsablePatissier
-            cascade: {  }
-            mappedBy: null
-            inversedBy: null
-            joinColumns:
-                id_rp:
-                    referencedColumnName: id
-            orphanRemoval: false
     lifecycleCallbacks: {  }

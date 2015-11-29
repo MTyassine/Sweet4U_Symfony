@@ -13,3 +13,6 @@ services:
         class: PI\Sweet4uBundle\Form\RegisterFormType
         tags:
             - { name: form.type, alias: app_user_registration }
+    redirect.after.login:
+            class: PI\userBundle\Redirection\AfterLoginRedirection
+            arguments: [@router]

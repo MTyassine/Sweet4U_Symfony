@@ -1,22 +1,52 @@
-{% extends "FOSUserBundle::layout.html.twig" %}
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
 
-{% block fos_user_content %}
-{% if error %}
-    <div>{{ error|trans({}, 'FOSUserBundle') }}</div>
-{% endif %}
+    <head>
+        <title>The Login-Animated Website Template | Home :: w3layouts</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/logincss.css')}}" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+        <!--webfonts-->
+        <link href="{{asset('http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,300,600,700')}}" rel='stylesheet' type='text/css'>
+        <!--//webfonts-->
+    </head>
+    <body>
 
-<form action="{{ path("fos_user_security_check") }}" method="post">
-    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+        <!-----start-main---->
+        <div class="login-form">
+            <div class="head">
+                <img src="{{asset ('img/image2.png')}} "alt="" />
 
-    <label for="username">{{ 'security.login.username'|trans({}, 'FOSUserBundle') }}</label>
-    <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" />
+            </div>
+            <form action="{{ path("fos_user_security_check") }}" method="post">
+                <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+                <li>
+                    <input type="text" id="USERNAME" name="_username" placeholder="Login" required="required" class=" text" /><a href="#" class=" icon user"></a>
+                </li
+                <li>
+                    <input type="password" id="password" name="_password" placeholder="Mot de Passe" required="required"  class="text" /><a href="#" class=" icon lock"></a>					</li>
+                <div class="p-container">
+                    <label class="checkbox"><input type="checkbox" name="checkbox" checked><i></i>Remember Me</label>
 
-    <label for="password">{{ 'security.login.password'|trans({}, 'FOSUserBundle') }}</label>
-    <input type="password" id="password" name="_password" required="required" />
+                    <input type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans({}, 'FOSUserBundle') }}" />
+                    <div class="clear"> </div>
+                    
+                    <p> <a href="/sweet4u/Sweet4U_Symfony/web/app_dev.php/register"><h1>Inscription</h1></a></p>
 
-    <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
-    <label for="remember_me">{{ 'security.login.remember_me'|trans({}, 'FOSUserBundle') }}</label>
+                </div>
+            </form>
+        </div>
+        <!--//End-login-form-->
+        <!-----start-copyright---->
 
-    <input type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans({}, 'FOSUserBundle') }}" />
-</form>
-{% endblock fos_user_content %}
+        <!-----//end-copyright---->
+
+    </body>
+</html>

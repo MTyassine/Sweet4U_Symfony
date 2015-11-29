@@ -12,7 +12,7 @@
     </tr>
     <tr>
         <td>Mail :</td>
-        <td>{{ form_widget(form.mail) }}</td>
+        <td>{{ form_widget(form.email) }}</td>
     </tr>
     <tr>
         <td>Adresse :</td>
@@ -23,7 +23,18 @@
         <td>cin :</td>
         <td>{{ form_widget(form.cin) }}</td>
     </tr>
-   
+    <tr>
+                <td>Username :</td>
+                <td>{{ form_widget(form.username) }}</td>
+            </tr>
+            <tr>
+                <td>Mot de passe :</td>
+                <td>{{ form_widget(form.plainPassword.first) }}</td>
+            </tr>
+            <tr>
+                <td>Vérification :</td>
+                <td>{{ form_widget(form.plainPassword.second) }}</td>
+            </tr>
     <tr>
         <td>Nom Patisserie :</td>
         <td>{{ form_widget(form.nompatisserie) }}</td>
@@ -34,6 +45,5 @@
     </tr>
     </table><br>
     <div>
-        <input type="submit" value="{{ 'registration.submit'|trans }}" />
-    </div>
+<input type="submit" value="{{ 'registration.submit'|trans }}" onclick="{{ path ("fos_user_registration_register") }}" />    </div>
 {{form_end(form) }}

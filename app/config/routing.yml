@@ -24,3 +24,7 @@ fos_user_resetting:
 fos_user_change_password:
     resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
     prefix: /profile
+    
+PI_Coffret_ajout_Coffret:
+    path: /ajoutCoffret 
+    defaults: { _controller: PISweet4uBundle:Coffret:ajout }    
